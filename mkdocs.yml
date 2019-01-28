@@ -1,0 +1,27 @@
+site_name: DigiDocs
+pages:
+    - Home: 'index.md'
+    - R Basics:
+        - Introduction: 'RBasics.md'
+        - Functions and data access: 'RBasics1.md'
+        - Vectors and Subsetting: 'RBasics2.md'
+        - Sort, Order and Rank: 'RBasics3.md'
+        - Data Frame and Coercion: 'RBasics4.md'
+        - Vector Arithmetic: 'RBasics5.md'
+        - Data Manipulation: 'RBasics6.md'
+        - Basic Plotting: 'RBasics7.md'
+        - R Programming: 'RBasics8.md'
+theme:
+  name: 'material'
+  custom_dir: 'add'
+markdown_extensions:
+  - 'admonition'
+repo_url: 'https://github.com/digidocs'
+copyright: 'Evan Tay'
+edit_uri: ''
+extra:
+  social:
+    - type: 'globe'
+      link: 'http://www.evantay.com'
+    - type: 'github-alt'
+      link: 'https://github.com/DigiPie'
