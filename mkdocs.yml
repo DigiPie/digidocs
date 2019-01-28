@@ -1,5 +1,5 @@
 site_name: DigiDocs
-pages:
+nav:
     - Home: 'index.md'
     - R Basics:
         - Introduction: 'RBasics.md'
