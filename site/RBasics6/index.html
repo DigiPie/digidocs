@@ -1,0 +1,742 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-3.2.0">
+    
+    
+      
+        <title>Data Manipulation - DigiDocs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.572ca0f0.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.8c900955.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#r-basics-data-manipulation" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="DigiDocs" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                DigiDocs
+              </span>
+              <span class="md-header-nav__topic">
+                Data Manipulation
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/DigiPie/digidocs" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="DigiDocs" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    DigiDocs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/DigiPie/digidocs" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      GitHub
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      R Basics
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        R Basics
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../RBasics/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../RBasics1/" title="Functions and data access" class="md-nav__link">
+      Functions and data access
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../RBasics2/" title="Vectors and Subsetting" class="md-nav__link">
+      Vectors and Subsetting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../RBasics3/" title="Sort, Order and Rank" class="md-nav__link">
+      Sort, Order and Rank
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../RBasics4/" title="Data Frame and Coercion" class="md-nav__link">
+      Data Frame and Coercion
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../RBasics5/" title="Vector Arithmetic" class="md-nav__link">
+      Vector Arithmetic
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Data Manipulation
+      </label>
+    
+    <a href="./" title="Data Manipulation" class="md-nav__link md-nav__link--active">
+      Data Manipulation
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dplyr-package" title="dplyr package" class="md-nav__link">
+    dplyr package
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation-usage" title="Installation &amp; Usage" class="md-nav__link">
+    Installation &amp; Usage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mutate" title="mutate" class="md-nav__link">
+    mutate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter" title="filter" class="md-nav__link">
+    filter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select" title="select" class="md-nav__link">
+    select
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pipe-operator-gt" title="Pipe operator: %&gt;%" class="md-nav__link">
+    Pipe operator: %&gt;%
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../RBasics7/" title="Basic Plotting" class="md-nav__link">
+      Basic Plotting
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../RBasics8/" title="R Programming" class="md-nav__link">
+      R Programming
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#dplyr-package" title="dplyr package" class="md-nav__link">
+    dplyr package
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation-usage" title="Installation &amp; Usage" class="md-nav__link">
+    Installation &amp; Usage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mutate" title="mutate" class="md-nav__link">
+    mutate
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter" title="filter" class="md-nav__link">
+    filter
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#select" title="select" class="md-nav__link">
+    select
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pipe-operator-gt" title="Pipe operator: %&gt;%" class="md-nav__link">
+    Pipe operator: %&gt;%
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="r-basics-data-manipulation">R Basics / Data Manipulation</h1>
+<p><em>Last updated on 21 Jan 18</em></p>
+<p>This section covers data manipulation using <a href="https://cran.r-project.org/web/packages/dplyr/README.html">dplyr</a> package's <code>mutate</code>, <code>filter</code> and <code>select</code> functions, and <code>%&gt;%</code> operator.</p>
+<h2 id="dplyr-package">dplyr package</h2>
+<p>The <a href="https://cran.r-project.org/web/packages/dplyr/README.html">dplyr</a> package is a grammar of data manipulation for R.</p>
+<h3 id="installation-usage">Installation &amp; Usage</h3>
+<pre><code class="r">&gt; install.packages(&quot;dplyr&quot;)
+&gt; library(dplyr) # To load and use
+</code></pre>
+
+<h3 id="mutate"><code>mutate</code></h3>
+<p>The function <code>mutate(...)</code> can be used to create a new column.</p>
+<pre><code class="r">&gt; data(starwars) # From package dplyr
+&gt; starwars &lt;- mutate(starwars, bmi = mass / ((height/100) ** 2))
+&gt; highestBMI &lt;- which.max(starwars$bmi)
+&gt; starwars$name[highestBMI]
+[1] &quot;Jabba Desilijic Tiure&quot;
+</code></pre>
+
+<div class="admonition note">
+<p class="admonition-title">Reloading from package</p>
+<p>Reloading datasets from packages will overwrite any changes / mutations applied to them.</p>
+</div>
+<h3 id="filter"><code>filter</code></h3>
+<p>The function <code>filter(...)</code> filters rows.</p>
+<pre><code class="r">&gt; # Following previous example
+&gt; outOfShape &lt;- filter(starwars, bmi &gt; 30)
+&gt; outOfShape$name
+ [1] &quot;R2-D2&quot; &quot;Darth Vader&quot; &quot;Owen Lars&quot; &quot;R5-D4&quot; &quot;Jabba Desilijic Tiure&quot;
+ [6] &quot;Jek Tono Porkins&quot; &quot;Yoda&quot; &quot;IG-88&quot; &quot;Bossk&quot; &quot;Sebulba&quot;              
+[11] &quot;Dud Bolt&quot; &quot;Grievous&quot;    
+</code></pre>
+
+<h3 id="select"><code>select</code></h3>
+<p>The function <code>select(...)</code> returns selected columns.</p>
+<pre><code class="r">&gt; # Following previous example
+&gt; fitnessProgram &lt;- select(outOfShape, name, mass, height, bmi)
+&gt; fitnessProgram
+# A tibble: 12 x 4
+                    name  mass height       bmi
+                   &lt;chr&gt; &lt;dbl&gt;  &lt;int&gt;     &lt;dbl&gt;
+ 1                 R2-D2    32     96  34.72222
+ 2           Darth Vader   136    202  33.33007
+ 3             Owen Lars   120    178  37.87401
+ 4                 R5-D4    32     97  34.00999
+ 5 Jabba Desilijic Tiure  1358    175 443.42857
+...
+</code></pre>
+
+<h3 id="pipe-operator-gt">Pipe operator: <code>%&gt;%</code></h3>
+<p>The pipe operator <code>%&gt;%</code> to pipe the output of one function to the next.</p>
+<pre><code class="r">&gt; # Following previous example
+&gt; starwars %&gt;% filter(films == &quot;The Force Awakens&quot;) %&gt;% select(name, species)
+# A tibble: 5 x 2
+            name species
+           &lt;chr&gt;   &lt;chr&gt;
+1           Finn   Human
+2            Rey   Human
+3    Poe Dameron   Human
+4            BB8   Droid
+5 Captain Phasma    &lt;NA&gt;
+</code></pre>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        <!--
+  Copyright (c) 2016-2017 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<!-- Application footer -->
+<footer class="md-footer">
+
+  <!-- Link to previous and/or next page -->
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+
+        <!-- Link to previous page -->
+        
+          <a href="RBasics5/"
+              title="Vector Arithmetic"
+              class="md-flex md-footer-nav__link md-footer-nav__link--prev"
+              rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back
+                    md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch
+                  md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Vector Arithmetic
+              </span>
+            </div>
+          </a>
+        
+
+        <!-- Link to next page -->
+        
+          <a href="RBasics7/" title="Basic Plotting"
+              class="md-flex md-footer-nav__link md-footer-nav__link--next"
+              rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch
+                  md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Basic Plotting
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward
+                    md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+
+  <!-- Further information -->
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+
+      <!-- Copyright and theme information -->
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            <a href="http://www.evantay.com">Evan Tay 2019</a>
+          </div>
+        
+        built with
+        <a href="https://squidfunk.github.io/mkdocs-material/">Material</a>
+        for
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        on
+        <a href="https://www.onthisday.com/day/February/05">05 Feb 19</a>
+      </div>
+
+      <!-- Social links -->
+      
+        
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="http://www.evantay.com" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://github.com/DigiPie" class="md-footer-social__link fa fa-github-alt"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.b41f3d20.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
