@@ -2,9 +2,9 @@
 
 Hi, I created this website on 20 Dec 17 to document what I learn for easy referencing in the future.
 
-!!! tip "Most recent course"
-    [HarvardX's Data Science: R Basics](/RBasics/)
+!!! tip "Most recent note"
+    [Docker](/Docker/)
 
-    _Enrolled from 4 Dec 17 to 21 Jan 18_
+    New notes on using Docker for deployment of Git projects.
 
 This website is maintained by [Evan Tay](http://www.evantay.com), a Computer Science undergraduate at the National University of Singapore.

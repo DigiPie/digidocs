@@ -1,6 +1,8 @@
 site_name: DigiDocs
-nav:
+pages:
     - Home: 'index.md'
+    - DevOps:
+        - Docker: 'Docker.md'
     - R Basics:
         - Introduction: 'RBasics.md'
         - Functions and data access: 'RBasics1.md'
