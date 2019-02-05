@@ -18,7 +18,7 @@ theme:
   custom_dir: 'add'
 markdown_extensions:
   - 'admonition'
-repo_url: 'https://github.com/digidocs'
+repo_url: 'https://github.com/DigiPie/digidocs'
 copyright: 'Evan Tay'
 edit_uri: ''
 extra:
