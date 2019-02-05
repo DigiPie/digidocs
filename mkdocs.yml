@@ -16,6 +16,7 @@ pages:
 theme:
   name: 'material'
   custom_dir: 'add'
+  highlightjs: true
 markdown_extensions:
   - 'admonition'
 repo_url: 'https://github.com/DigiPie/digidocs'
