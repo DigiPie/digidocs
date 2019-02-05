@@ -1,25 +1,25 @@
 # R Basics / Introduction
-_Last updated on 21 Jan 18_
+_Last updated on 5 Feb 18_
 
-In this section you will find my documentation of essential Docker knowledge to deploy Git projects.
+In this section you will find my notes on using Docker for the deployment of Git projects.
 
 ## Docker and Github
 
-### Deploy script for Docker and Github
+### Deploy script
 This script assumes that the working directory contains a `.git` directory, `Dockerfile` and `package.json`. A `.gitignore` and a `.dockerignore` file may be useful too. It is also assumed that the project dependencies have been installed using `npm install`.
 
 **deploy.sh**
-```
+```bash
 IMAGE_NAME="<IMAGE>"
 CONTAINER_NAME="<NAME>"
 CONTAINER_PORT="<PORT_1>" # To be mapped to HOST_PORT
 HOST_PORT="<PORT_2>" # The port clients will access
 
 docker stop $CONTAINER_NAME
-docker system prune -af # Removes the stopped container and all unused and dangling images
+docker system prune -af # Removes the container and all unused images
 git pull origin master # Pulls latest source files and image
 docker build -t $IMAGE_NAME .
-sudo docker run --name $CONTAINER_NAME -p $CONTAINER_PORT:$HOST_PORT -d $IMAGE_NAME
+docker run --name $CONTAINER_NAME -p $CONTAINER_PORT:$HOST_PORT -d $IMAGE_NAME
 ```
 
 Before the script can be used, replace the following placeholders:
