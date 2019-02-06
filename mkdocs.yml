@@ -1,7 +1,8 @@
 site_name: DigiDocs
 pages:
     - Home: 'index.md'
-    - DevOps: 'DevOps/'
+    - DevOps:
+        - Index: 'DevOps/index.md'
         - Docker: 'DevOps/Docker.md'
         - Ubuntu 18.04: 'DevOps/Ubuntu18_04.md'
     - R Basics:
