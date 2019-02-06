@@ -3,6 +3,7 @@ pages:
     - Home: 'index.md'
     - DevOps:
         - Docker: 'Docker.md'
+        - Ubuntu 18.04: 'Ubuntu18_04.md'
     - R Basics:
         - Introduction: 'RBasics.md'
         - Functions and data access: 'RBasics1.md'
@@ -18,6 +19,7 @@ theme:
   custom_dir: 'add'
   highlightjs: true
 markdown_extensions:
+  - 'fenced_code'
   - 'admonition'
 repo_url: 'https://github.com/DigiPie/digidocs'
 copyright: 'Evan Tay'
