@@ -1,5 +1,5 @@
 # R Basics / Functions and data access
-_Last updated on 21 Jan 18_
+_Last updated on 6 Feb 19_
 
 This section covers commonly-used R functions and also data access via the `$` sign.
 

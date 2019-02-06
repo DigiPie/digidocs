@@ -1,5 +1,5 @@
 # R Basics / Vector Arithmetic
-_Last updated on 21 Jan 18_
+_Last updated on 6 Feb 19_
 
 This section covers vector arithmetic and indexing.
 
