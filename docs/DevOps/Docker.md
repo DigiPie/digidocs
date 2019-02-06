@@ -1,5 +1,5 @@
-# R Basics / Introduction
-_Last updated on 5 Feb 18_
+# DevOps / Docker
+_Last updated on 6 Feb 19_
 
 In this section you will find my notes on using Docker for the deployment of Git projects.
 
