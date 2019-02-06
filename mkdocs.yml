@@ -2,8 +2,8 @@ site_name: DigiDocs
 pages:
     - Home: 'index.md'
     - DevOps:
-        - Docker: 'Docker.md'
-        - Ubuntu 18.04: 'Ubuntu18_04.md'
+        - Docker: 'DevOps/Docker.md'
+        - Ubuntu 18.04: 'DevOps/Ubuntu18_04.md'
     - R Basics:
         - Introduction: 'RBasics.md'
         - Functions and data access: 'RBasics1.md'
