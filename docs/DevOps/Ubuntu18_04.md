@@ -1,4 +1,4 @@
-# R Basics / Introduction
+# DevOps / Ubuntu 18.04
 _Last updated on 6 Feb 18_
 
 In this section you will find my notes on setting up and securing Ubuntu 18.04. [Vim](https://www.linux.com/learn/vim-101-beginners-guide-vim) knowledge is assumed.
