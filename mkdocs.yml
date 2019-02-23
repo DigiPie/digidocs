@@ -1,4 +1,40 @@
+# Project information
 site_name: DigiDocs
+site_description: 'A MkDocs powered static site for personal note-taking and documentation.'
+site_author: 'Evan Tay'
+site_url: 'http://digipie.github.io/'
+
+# Repository
+repo_name: 'DigiPie/digidocs'
+repo_url: 'https://github.com/DigiPie/digidocs'
+
+# Copyright
+copyright: 'Copyright &copy; Evan Tay'
+
+# Configuration
+theme:
+  name: 'material'
+  language: 'en'
+  custom_dir: 'add'
+  highlightjs: true
+
+# Customization
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/DigiPie'
+    - type: 'globe'
+      link: 'http://www.evantay.com'
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: true
+  - toc:
+      permalink: true
+
 nav:
     - Home: 'index.md'
     - DevOps:
@@ -15,19 +51,3 @@ nav:
         - Data Manipulation: 'R/data_manipulation.md'
         - Basic Plotting: 'R/basic_plotting.md'
         - R Programming: 'R/r_programming.md'
-theme:
-  name: 'material'
-  custom_dir: 'add'
-  highlightjs: true
-markdown_extensions:
-  - 'fenced_code'
-  - 'admonition'
-repo_url: 'https://github.com/DigiPie/digidocs'
-copyright: 'Evan Tay'
-edit_uri: ''
-extra:
-  social:
-    - type: 'globe'
-      link: 'http://www.evantay.com'
-    - type: 'github-alt'
-      link: 'https://github.com/DigiPie'
