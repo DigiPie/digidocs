@@ -1,9 +1,7 @@
-# R Basics / Vectors and Subsetting
-_Last updated on 6 Feb 19_
-
+# R Basics / Vectors and subsetting
 This section covers vector manipulation and specific access of entries in a vector via subsetting.
 
-## Creating Vectors
+## Creating vectors
 ### `c`
 Use the function _c_ which stands for concatenation.
 ```r

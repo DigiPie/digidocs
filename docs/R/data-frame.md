@@ -1,9 +1,7 @@
-# R Basics / Data Frame and Coercion
-_Last updated on 6 Feb 19_
-
+# R Basics / Data frame and coercion
 This section covers Data Frame, Coercion and NA values.
 
-## Data Frame creation
+## Data frame creation
 ### `data.frame`
 The function `data.frame(...)` is used to create a new data frame.
 
@@ -41,7 +39,7 @@ When an entry's type is not what is expected, R will attempt to coerce it into t
 [1] "character"
 ```
 
-### Explicit Coercion
+### Explicit coercion
 Explicitly coerce values using the `as` functions.
 
 * `as.character(x)`: Coerce vector x's entries into characters. Example: `y <- as.character(c(1:5))`.

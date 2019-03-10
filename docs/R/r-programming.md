@@ -1,6 +1,4 @@
-# R Basics / R Programming
-_Last updated on 6 Feb 19_
-
+# R Basics / R programming
 This section covers basic R programming features such as `if-else` statements, `for` loops and function definitions.
 
 ## `if`...`else` statement

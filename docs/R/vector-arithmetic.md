@@ -1,6 +1,4 @@
-# R Basics / Vector Arithmetic
-_Last updated on 6 Feb 19_
-
+# R Basics / Vector arithmetic
 This section covers vector arithmetic and indexing.
 
 ## Arithmetic operations
@@ -24,7 +22,7 @@ Operator     | Name             | Examples
 %%           | Modulus          | 5%%4 = 1
 %/%          | Integer division | 7%/%2 = 3
 
-### Vector Arithmetic
+### Vector arithmetic
 We can perform vector arithmetic on two vectors of the same length.
 ```r
 > years = c(2014, 2015)

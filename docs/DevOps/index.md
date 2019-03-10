@@ -1,6 +1,5 @@
 # DevOps
-_Last updated on 6 Feb 19_
+In this chapter you will find my notes for DevOps/Operations-related knowledge. You will find information on Linux, Docker and Git under the DevOps folder.
 
-In this section you will find my notes for DevOps/Operations-related knowledge. You will find information on Linux, Docker and Git under the DevOps folder.
-
-I started this chapter on 5 Feb 19.
+!!! info Chapter information
+    This chapter was started on **5 Feb 2019**. This chapter's content was last updated in **Feb 19**.

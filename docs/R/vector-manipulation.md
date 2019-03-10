@@ -1,6 +1,4 @@
-# R Basics / Sort, Order and Rank
-_Last updated on 6 Feb 19_
-
+# R Basics / Sort, order and rank
 This section covers sorting, ordering and ranking of vectors.
 
 ## `sort`

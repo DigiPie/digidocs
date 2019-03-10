@@ -1,6 +1,4 @@
-# R Basics / Basic Plotting
-_Last updated on 6 Feb 19_
-
+# R Basics / Basic plotting
 This sections covers basic plotting of data using scatter plots, histograms and box plots.
 
 ## `plot`
