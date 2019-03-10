@@ -37,14 +37,14 @@ markdown_extensions:
 
 nav:
     - Home: 'index.md'
-    - C programming:
+    - C:
         - Index: 'C/index.md'
         - Arguments: 'C/arguments.md'
     - DevOps:
         - Index: 'DevOps/index.md'
         - Docker: 'DevOps/docker.md'
         - Ubuntu 18.04: 'DevOps/ubuntu18-04.md'
-    - R Basics:
+    - R:
         - Index: 'R/index.md'
         - Functions and data access: 'R/functions.md'
         - Vectors and subsetting: 'R/vectors.md'
