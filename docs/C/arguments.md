@@ -1,5 +1,5 @@
 # C programming / Arguments
-In this section you will find my notes on passing command line arguments into the `main()` function.
+In this section you will find my notes on command line arguments which are passed into the `main()` function.
 
 ## Print out arguments
 The example program below prints out all command line arguments passed into the `main()` function.
