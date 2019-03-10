@@ -49,7 +49,7 @@ nav:
         - Functions and data access: 'R/functions.md'
         - Vectors and subsetting: 'R/vectors.md'
         - Sort, order and rank: 'R/vector-manipulation.md'
-        - Data frame and coercion: 'R/dataframe.md'
+        - Data frame and coercion: 'R/data-frame.md'
         - Vector arithmetic: 'R/vector-arithmetic.md'
         - Data manipulation: 'R/data-manipulation.md'
         - Basic plotting: 'R/basic-plotting.md'
