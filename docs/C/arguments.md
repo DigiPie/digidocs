@@ -1,4 +1,4 @@
-# Arguments
+# C programming / Arguments
 In this section you will find my notes on passing command line arguments into the `main()` function.
 
 ## Print out arguments
