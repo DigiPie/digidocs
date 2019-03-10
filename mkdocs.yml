@@ -37,6 +37,9 @@ markdown_extensions:
 
 nav:
     - Home: 'index.md'
+    - C programming:
+        - Index: 'C/index.md'
+        - Arguments: 'C/arguments.md'
     - DevOps:
         - Index: 'DevOps/index.md'
         - Docker: 'DevOps/Docker.md'
@@ -44,10 +47,10 @@ nav:
     - R Basics:
         - Index: 'R/index.md'
         - Functions and data access: 'R/functions.md'
-        - Vectors and Subsetting: 'R/vectors.md'
-        - Sort, Order and Rank: 'R/vector_manipulation.md'
-        - Data Frame and Coercion: 'R/dataframe.md'
-        - Vector Arithmetic: 'R/vector_arithmetic.md'
-        - Data Manipulation: 'R/data_manipulation.md'
-        - Basic Plotting: 'R/basic_plotting.md'
-        - R Programming: 'R/r_programming.md'
+        - Vectors and subsetting: 'R/vectors.md'
+        - Sort, order and rank: 'R/vector_manipulation.md'
+        - Data frame and coercion: 'R/dataframe.md'
+        - Vector arithmetic: 'R/vector_arithmetic.md'
+        - Data manipulation: 'R/data_manipulation.md'
+        - Basic plotting: 'R/basic_plotting.md'
+        - R programming: 'R/r_programming.md'
