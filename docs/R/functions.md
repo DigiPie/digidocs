@@ -1,4 +1,4 @@
-# R Basics / Functions and data access
+# R / Functions and data access
 This section covers commonly-used R functions and also data access via the `$` sign.
 
 ## Functions

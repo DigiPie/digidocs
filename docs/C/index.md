@@ -1,4 +1,4 @@
-# C programming
+# Programming in C
 In this chapter you will find my notes for C programming.
 
 !!! info Chapter information

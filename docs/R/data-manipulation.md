@@ -1,4 +1,4 @@
-# R Basics / Data manipulation
+# R / Data manipulation
 This section covers data manipulation using [dplyr](https://cran.r-project.org/web/packages/dplyr/README.html) package's `mutate`, `filter` and `select` functions, and `%>%` operator.
 
 ## dplyr package

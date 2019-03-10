@@ -1,4 +1,4 @@
-# R Basics / Vector arithmetic
+# R / Vector arithmetic
 This section covers vector arithmetic and indexing.
 
 ## Arithmetic operations

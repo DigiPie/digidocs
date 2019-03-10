@@ -1,4 +1,4 @@
-# R Basics / Vectors and subsetting
+# R / Vectors and subsetting
 This section covers vector manipulation and specific access of entries in a vector via subsetting.
 
 ## Creating vectors

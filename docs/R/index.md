@@ -1,4 +1,4 @@
-# R Basics
+# Programming in R
 In this chapter you will find my documentation of basic R programming knowledge picked up while taking the [HarvardX's Data Science: R Basics](https://courses.edx.org/courses/course-v1:HarvardX+PH125.1x+2T2017/course/) course.
 
 !!! info Chapter information

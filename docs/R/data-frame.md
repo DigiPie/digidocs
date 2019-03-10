@@ -1,4 +1,4 @@
-# R Basics / Data frame and coercion
+# R / Data frame and coercion
 This section covers Data Frame, Coercion and NA values.
 
 ## Data frame creation
