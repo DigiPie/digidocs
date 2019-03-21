@@ -5,8 +5,8 @@ site_author: 'Evan Tay'
 site_url: 'http://digipie.github.io/'
 
 # Repository
-repo_name: 'DigiPie/digidocs'
-repo_url: 'https://github.com/DigiPie/digidocs'
+repo_name: 'DigiPie/digipie.github.io'
+repo_url: 'https://github.com/DigiPie/digipie.github.io'
 
 # Copyright
 copyright: 'Copyright &copy; Evan Tay'
