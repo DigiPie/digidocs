@@ -40,11 +40,15 @@ If you want Git to temporarily ignore a file which you will commit at a later ti
 
 To temporarily ignore (stop tracking) a file:  
 
-`git update-index --assume-unchanged <file>`
+```
+git update-index --assume-unchanged <file>
+```
 
 To start tracking a file again:
 
-`git update-index --no-assume-unchanged <file>`
+```
+git update-index --no-assume-unchanged <file>
+```
 
 !!! tip
     Read the [man page](https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-update-index.html) to find out more about `git update-index` rules.

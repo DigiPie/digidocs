@@ -1,12 +1,12 @@
 # Project information
 site_name: DigiDocs
-site_description: 'A MkDocs powered static site for personal note-taking and documentation.'
+site_description: 'DigiDocs is a collection of concise, to-the-point tutorials for technologies such as Git, Linux and C. These tutorials are organised under chapters such as Git, Linux and C.'
 site_author: 'Evan Tay'
-site_url: 'http://digipie.github.io/'
+site_url: 'https://digipie.github.io/digidocs/'
 
 # Repository
-repo_name: 'DigiPie/digipie.github.io'
-repo_url: 'https://github.com/DigiPie/digipie.github.io'
+repo_name: 'DigiPie/digidocs'
+repo_url: 'https://github.com/DigiPie/digidocs'
 
 # Copyright
 copyright: 'Copyright &copy; Evan Tay'
