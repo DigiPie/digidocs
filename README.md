@@ -4,6 +4,4 @@
 # How was this built
 DigiDocs is built using [MkDocs](https://github.com/mkdocs/mkdocs/), a static site generator for project documentation, and the [Material for MkDocs](https://github.com/squidfunk/mkdocs-material) theme.
 
-A MkDocs an powered static site for personal note-taking and documentation.
-
 The website is deployed at: [digipie.github.io/digidocs/](https://digipie.github.io/digidocs/)
