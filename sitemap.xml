@@ -6,72 +6,7 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://digipie.github.io/C/</loc>
-     <lastmod>2019-03-24</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>http://digipie.github.io/C/arguments/</loc>
-     <lastmod>2019-03-24</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>http://digipie.github.io/DevOps/</loc>
-     <lastmod>2019-03-24</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>http://digipie.github.io/DevOps/docker/</loc>
-     <lastmod>2019-03-24</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>http://digipie.github.io/DevOps/ubuntu18-04/</loc>
-     <lastmod>2019-03-24</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>http://digipie.github.io/R/</loc>
-     <lastmod>2019-03-24</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>http://digipie.github.io/R/functions/</loc>
-     <lastmod>2019-03-24</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>http://digipie.github.io/R/vectors/</loc>
-     <lastmod>2019-03-24</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>http://digipie.github.io/R/vector-manipulation/</loc>
-     <lastmod>2019-03-24</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>http://digipie.github.io/R/data-frame/</loc>
-     <lastmod>2019-03-24</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>http://digipie.github.io/R/vector-arithmetic/</loc>
-     <lastmod>2019-03-24</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>http://digipie.github.io/R/data-manipulation/</loc>
-     <lastmod>2019-03-24</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>http://digipie.github.io/R/basic-plotting/</loc>
-     <lastmod>2019-03-24</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>http://digipie.github.io/R/r-programming/</loc>
+     <loc>http://digipie.github.io/git/ignoring-files/</loc>
      <lastmod>2019-03-24</lastmod>
      <changefreq>daily</changefreq>
     </url>

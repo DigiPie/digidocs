@@ -42,7 +42,7 @@
     
     
       
-        <title>Ubuntu 18.04 - DigiDocs</title>
+        <title>DevOps / Ubuntu 18.04 - DigiDocs</title>
       
     
     
@@ -125,7 +125,7 @@
               DigiDocs
             </span>
             <span class="md-header-nav__topic">
-              Ubuntu 18.04
+              DevOps / Ubuntu 18.04
             </span>
           
         </div>
@@ -190,6 +190,39 @@
         
       
       
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." title="Home" class="md-tabs__link md-tabs__link--active">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../git/ignoring-files/" title="Git" class="md-tabs__link">
+          Git
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
       <main class="md-main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
@@ -251,11 +284,11 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
     
     <label class="md-nav__link" for="nav-2">
-      C
+      Git
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-2">
-        C
+        Git
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -266,320 +299,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../C/" title="Index" class="md-nav__link">
-      Index
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../C/arguments/" title="Arguments" class="md-nav__link">
-      Arguments
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
-    
-    <label class="md-nav__link" for="nav-3">
-      DevOps
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
-        DevOps
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../" title="Index" class="md-nav__link">
-      Index
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../docker/" title="Docker" class="md-nav__link">
-      Docker
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Ubuntu 18.04
-      </label>
-    
-    <a href="./" title="Ubuntu 18.04" class="md-nav__link md-nav__link--active">
-      Ubuntu 18.04
-    </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#creating-a-new-non-root-sudo-user" title="Creating a new non-root Sudo user" class="md-nav__link">
-    Creating a new non-root Sudo user
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#add-a-new-user" title="Add a new user" class="md-nav__link">
-    Add a new user
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#add-user-to-sudo-group" title="Add user to sudo group" class="md-nav__link">
-    Add user to sudo group
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#log-in-to-user" title="Log in to user" class="md-nav__link">
-    Log in to user
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#only-allow-key-authentication" title="Only allow Key Authentication" class="md-nav__link">
-    Only allow Key Authentication
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#add-public-key-to-user" title="Add Public Key to User" class="md-nav__link">
-    Add Public Key to User
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#disable-password-authentication" title="Disable Password Authentication" class="md-nav__link">
-    Disable Password Authentication
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#basic-firewall" title="Basic Firewall" class="md-nav__link">
-    Basic Firewall
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#web-resources" title="Web Resources" class="md-nav__link">
-    Web Resources
-  </a>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
-    
-    <label class="md-nav__link" for="nav-4">
-      R
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-4">
-        R
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../R/" title="Index" class="md-nav__link">
-      Index
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../R/functions/" title="Functions and data access" class="md-nav__link">
-      Functions and data access
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../R/vectors/" title="Vectors and subsetting" class="md-nav__link">
-      Vectors and subsetting
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../R/vector-manipulation/" title="Sort, order and rank" class="md-nav__link">
-      Sort, order and rank
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../R/data-frame/" title="Data frame and coercion" class="md-nav__link">
-      Data frame and coercion
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../R/vector-arithmetic/" title="Vector arithmetic" class="md-nav__link">
-      Vector arithmetic
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../R/data-manipulation/" title="Data manipulation" class="md-nav__link">
-      Data manipulation
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../R/basic-plotting/" title="Basic plotting" class="md-nav__link">
-      Basic plotting
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../R/r-programming/" title="R programming" class="md-nav__link">
-      R programming
+    <a href="../../git/ignoring-files/" title="Ignoring files" class="md-nav__link">
+      Ignoring files
     </a>
   </li>
 
@@ -867,54 +588,6 @@ OpenSSH (v6)               ALLOW       Anywhere (v6)
 <footer class="md-footer">
 
   <!-- Link to previous and/or next page -->
-  
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid">
-
-        <!-- Link to previous page -->
-        
-          <a href="DevOps/docker/"
-              title="Docker"
-              class="md-flex md-footer-nav__link md-footer-nav__link--prev"
-              rel="prev">
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-back
-                    md-footer-nav__button"></i>
-            </div>
-            <div class="md-flex__cell md-flex__cell--stretch
-                  md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Previous
-                </span>
-                Docker
-              </span>
-            </div>
-          </a>
-        
-
-        <!-- Link to next page -->
-        
-          <a href="R/" title="Index"
-              class="md-flex md-footer-nav__link md-footer-nav__link--next"
-              rel="next">
-            <div class="md-flex__cell md-flex__cell--stretch
-                  md-footer-nav__title">
-              <span class="md-flex__ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
-                Index
-              </span>
-            </div>
-            <div class="md-flex__cell md-flex__cell--shrink">
-              <i class="md-icon md-icon--arrow-forward
-                    md-footer-nav__button"></i>
-            </div>
-          </a>
-        
-      </nav>
-    </div>
   
 
   <!-- Further information -->
