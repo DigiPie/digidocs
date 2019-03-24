@@ -17,6 +17,8 @@ theme:
   language: 'en'
   custom_dir: 'add'
   highlightjs: true
+  feature:
+    tabs: true
 
 # Customization
 extra:
@@ -36,21 +38,6 @@ markdown_extensions:
       permalink: true
 
 nav:
-    - Home: 'index.md'
-    - C:
-        - Index: 'C/index.md'
-        - Arguments: 'C/arguments.md'
-    - DevOps:
-        - Index: 'DevOps/index.md'
-        - Docker: 'DevOps/docker.md'
-        - Ubuntu 18.04: 'DevOps/ubuntu18-04.md'
-    - R:
-        - Index: 'R/index.md'
-        - Functions and data access: 'R/functions.md'
-        - Vectors and subsetting: 'R/vectors.md'
-        - Sort, order and rank: 'R/vector-manipulation.md'
-        - Data frame and coercion: 'R/data-frame.md'
-        - Vector arithmetic: 'R/vector-arithmetic.md'
-        - Data manipulation: 'R/data-manipulation.md'
-        - Basic plotting: 'R/basic-plotting.md'
-        - R programming: 'R/r-programming.md'
+    - Home: index.md
+    - Git:
+      - Ignoring files: git/ignoring-files.md
