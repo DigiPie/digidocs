@@ -10,10 +10,10 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
-        <meta name="description" content="A MkDocs powered static site for personal note-taking and documentation.">
+        <meta name="description" content="DigiDocs is a collection of concise, to-the-point tutorials for technologies such as Git, Linux and C. These tutorials are organised under chapters such as Git, Linux and C.">
       
       
-        <link rel="canonical" href="http://digipie.github.io/git/ignoring-files/">
+        <link rel="canonical" href="https://digipie.github.io/digidocs/git/ignoring-files/">
       
       
         <meta name="author" content="Evan Tay">
@@ -109,7 +109,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="http://digipie.github.io/" title="DigiDocs" class="md-header-nav__button md-logo">
+        <a href="https://digipie.github.io/digidocs/" title="DigiDocs" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -166,7 +166,7 @@
 
   
 
-<a href="https://github.com/DigiPie/digipie.github.io/" title="Go to repository" class="md-source" data-md-source="github">
+<a href="https://github.com/DigiPie/digidocs/" title="Go to repository" class="md-source" data-md-source="github">
   
     <div class="md-source__icon">
       <svg viewBox="0 0 24 24" width="24" height="24">
@@ -175,7 +175,7 @@
     </div>
   
   <div class="md-source__repository">
-    DigiPie/digipie.github.io
+    DigiPie/digidocs
   </div>
 </a>
           </div>
@@ -234,7 +234,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="http://digipie.github.io/" title="DigiDocs" class="md-nav__button md-logo">
+    <a href="https://digipie.github.io/digidocs/" title="DigiDocs" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
@@ -248,7 +248,7 @@
 
   
 
-<a href="https://github.com/DigiPie/digipie.github.io/" title="Go to repository" class="md-source" data-md-source="github">
+<a href="https://github.com/DigiPie/digidocs/" title="Go to repository" class="md-source" data-md-source="github">
   
     <div class="md-source__icon">
       <svg viewBox="0 0 24 24" width="24" height="24">
@@ -257,7 +257,7 @@
     </div>
   
   <div class="md-source__repository">
-    DigiPie/digipie.github.io
+    DigiPie/digidocs
   </div>
 </a>
     </div>
@@ -423,7 +423,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/DigiPie/digipie.github.io/edit/master/docs/git/ignoring-files.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/DigiPie/digidocs/edit/master/docs/git/ignoring-files.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
                 <h1 id="ignoring-files">Ignoring files<a class="headerlink" href="#ignoring-files" title="Permanent link">&para;</a></h1>
@@ -477,9 +477,15 @@ site/
 <h2 id="using-git-update-index">Using <code>git update-index</code><a class="headerlink" href="#using-git-update-index" title="Permanent link">&para;</a></h2>
 <p>If you want Git to temporarily ignore a file which you will commit at a later time, you can do so easily by  using the <code>git update-index</code> commands to tell Git to stop and start tracking the file.</p>
 <p>To temporarily ignore (stop tracking) a file:  </p>
-<p><code>git update-index --assume-unchanged &lt;file&gt;</code></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git update-index --assume-unchanged &lt;file&gt;
+</pre></div>
+</td></tr></table>
+
 <p>To start tracking a file again:</p>
-<p><code>git update-index --no-assume-unchanged &lt;file&gt;</code></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git update-index --no-assume-unchanged &lt;file&gt;
+</pre></div>
+</td></tr></table>
+
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Read the <a href="https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-update-index.html">man page</a> to find out more about <code>git update-index</code> rules.</p>
