@@ -48,6 +48,12 @@
     
       <link rel="stylesheet" href="../../assets/stylesheets/application.982221ab.css">
       
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.224b79ff.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#795548">
       
     
     
@@ -69,7 +75,9 @@
     
   </head>
   
-    <body dir="ltr">
+    
+    
+    <body dir="ltr" data-md-color-primary="brown" data-md-color-accent="brown">
   
     <svg class="md-svg">
       <defs>
@@ -361,6 +369,12 @@
       
       
       
+        <li class="md-nav__item">
+          <a href="#__comments" title="Comments" class="md-nav__link md-nav__link--active">
+            Comments
+          </a>
+        </li>
+      
     </ul>
   
 </nav>
@@ -423,6 +437,22 @@ docker run --name <span class="nv">$CONTAINER_NAME</span> -p <span class="nv">$C
                 
 
 
+  <h2 id="__comments">Comments</h2>
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://digipie.github.io/digidocs/DevOps/docker/";
+      this.page.identifier =
+        "DevOps/docker/";
+    };
+    (function() {
+      var d = document, s = d.createElement("script");
+      s.src = "//digipie-digidocs.disqus.com/embed.js";
+      s.setAttribute("data-timestamp", +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+
               
             </article>
           </div>
@@ -475,7 +505,7 @@ docker run --name <span class="nv">$CONTAINER_NAME</span> -p <span class="nv">$C
         for
         <a href="http://www.mkdocs.org">MkDocs</a>
         on
-        <a href="https://www.onthisday.com/day/March/24">24 Mar 19</a>
+        <a href="https://www.onthisday.com/day/March/25">25 Mar 19</a>
       </div>
 
       <!-- Social links -->
