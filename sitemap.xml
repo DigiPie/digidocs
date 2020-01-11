@@ -2,12 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
      <loc>https://digipie.github.io/digidocs/</loc>
-     <lastmod>2019-03-25</lastmod>
+     <lastmod>2020-01-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://digipie.github.io/digidocs/git/ignoring-files/</loc>
-     <lastmod>2019-03-25</lastmod>
+     <lastmod>2020-01-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://digipie.github.io/digidocs/probability-statistics/intro-probability/</loc>
+     <lastmod>2020-01-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
