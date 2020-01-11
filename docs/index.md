@@ -1,26 +1,19 @@
 # DigiDocs
 
+*Last updated on 12 Jan, 2020*
+
 ## What is this
 
-DigiDocs is a collection of concise, to-the-point tutorials for technologies such as Git, Linux and C. These tutorials are organised under chapters such as Git, Linux and C.
-
-## Who is this for
-
-It started out being a way for [me](http://www.evantay.com) to document what I learn in a concise manner. I did so because I wanted to minimise time spent re-learning things I have forgotten.
-
-**It may also be useful for you if you prefer tutorials which are compact yet clear.**
+DigiDocs is a collection of concise, to-the-point tutorials and references for my personal use. It started out being a way for [me](http://www.evantay.com) to document what I learn in a concise manner. I did so because I wanted to minimise time spent re-learning things I have forgotten.
 
 ## Chapters
 
-Check out my tutorials here:
+Check out my notes here:
 
 | Title                        | Dated               | Remarks          |
 | ---------------------------- | ------------------- | ---------------- |
 | [Git](git/ignoring-files.md) | Mar 2019 to Present | Work-in-progress |
 | [Heroku](heroku/quick-deploy.md)    | Jan 2020 to Present | Work-in-progress |
-
-!!! warning
-    This website is currently under renovations and most of the content has been taken out temporarily. Check back again for more tutorials.
 
 ## Who is this by
 

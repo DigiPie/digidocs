@@ -1,6 +1,6 @@
 # Ignoring files
 
-*Last updated on Mar 24, 2019*
+*Last updated on 24 Mar, 2019*
 
 !!! tip
     Basic knowledge of Git is assumed in this tutorial. If you are new to Git, visit <http://rogerdudler.github.io/git-guide/> to learn the basics first.
