@@ -1,36 +1,36 @@
 # Project information
 site_name: DigiDocs
-site_description: 'DigiDocs is a collection of concise, to-the-point tutorials for technologies such as Git, Linux and C. These tutorials are organised under chapters such as Git, Linux and C.'
-site_author: 'Evan Tay'
-site_url: 'https://digipie.github.io/digidocs/'
+site_description: "DigiDocs is a collection of concise, to-the-point tutorials for technologies such as Git, Linux and C. These tutorials are organised under chapters such as Git, Linux and C."
+site_author: "Evan Tay"
+site_url: "https://digipie.github.io/digidocs/"
 
 # Repository
-repo_name: 'DigiPie/digidocs'
-repo_url: 'https://github.com/DigiPie/digidocs'
+repo_name: "DigiPie/digidocs"
+repo_url: "https://github.com/DigiPie/digidocs"
 
 # Copyright
-copyright: 'Copyright &copy; Evan Tay'
+copyright: "Copyright &copy; Evan Tay"
 
 # Configuration
 theme:
-  name: 'material'
-  language: 'en'
-  custom_dir: 'add'
+  name: "material"
+  language: "en"
+  custom_dir: "add"
   highlightjs: true
   feature:
     tabs: true
   palette:
-    primary: 'brown'
-    accent: 'brown'
+    primary: "brown"
+    accent: "brown"
 
 # Customization
 extra:
   social:
-    - type: 'github'
-      link: 'https://github.com/DigiPie'
-    - type: 'globe'
-      link: 'http://www.evantay.com'
-  disqus: 'digipie-digidocs'
+    - type: "github"
+      link: "https://github.com/DigiPie"
+    - type: "globe"
+      link: "http://www.evantay.com"
+  disqus: "digipie-digidocs"
 # Extensions
 markdown_extensions:
   - admonition
@@ -41,6 +41,8 @@ markdown_extensions:
       permalink: true
 
 nav:
-    - Home: index.md
-    - Git:
+  - Home: index.md
+  - Git:
       - Ignoring files: git/ignoring-files.md
+  - Probability and statistics:
+      - Introduction to Probability: probability-statistics/intro-probability.md
