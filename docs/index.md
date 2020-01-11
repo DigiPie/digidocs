@@ -17,10 +17,10 @@ Check out my tutorials here:
 | Title                        | Dated               | Remarks          |
 | ---------------------------- | ------------------- | ---------------- |
 | [Git](git/ignoring-files.md) | Mar 2019 to Present | Work-in-progress |
-| [Heroku](heroku/index.md)    | Jan 2020 to Present | Work-in-progress |
+| [Heroku](heroku/quick-deploy.md)    | Jan 2020 to Present | Work-in-progress |
 
 !!! warning
-This website is currently under renovations and most of the content has been taken out temporarily. Check back again for more tutorials.
+    This website is currently under renovations and most of the content has been taken out temporarily. Check back again for more tutorials.
 
 ## Who is this by
 

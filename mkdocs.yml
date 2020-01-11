@@ -44,5 +44,5 @@ nav:
   - Home: index.md
   - Git:
       - Ignoring files: git/ignoring-files.md
-  - Probability and statistics:
-      - Introduction to Probability: probability-statistics/intro-probability.md
+  - Heroku:
+    - Quick-deploy: heroku/quick-deploy.md

@@ -1,9 +1,9 @@
 # Ignoring files
 
-### Mar 24, 2019
+*Last updated on Mar 24, 2019*
 
 !!! tip
-Basic knowledge of Git is assumed in this tutorial. If you are new to Git, visit <http://rogerdudler.github.io/git-guide/> to learn the basics first.
+    Basic knowledge of Git is assumed in this tutorial. If you are new to Git, visit <http://rogerdudler.github.io/git-guide/> to learn the basics first.
 
 This section covers how to tell Git to ignore certain files and directories by using _.gitignore_ files or the `git update-index` commands.
 
@@ -37,7 +37,7 @@ site/
 ```
 
 !!! warning
-If a file is already being tracked, adding it to _.gitignore_ will not stop Git from tracking it. You will need to remove the file from the Git cache using the `git rm --cached <file>` command. After doing this, the file will no longer be tracked provided it is specified in _.gitignore_.
+    If a file is already being tracked, adding it to _.gitignore_ will not stop Git from tracking it. You will need to remove the file from the Git cache using the `git rm --cached <file>` command. After doing this, the file will no longer be tracked provided it is specified in _.gitignore_.
 
 ## Using `git update-index`
 
@@ -56,7 +56,7 @@ git update-index --no-assume-unchanged <file>
 ```
 
 !!! tip
-Read the [man page](https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-update-index.html) to find out more about `git update-index` rules.
+    Read the [man page](https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-update-index.html) to find out more about `git update-index` rules.
 
 ## Resources
 
