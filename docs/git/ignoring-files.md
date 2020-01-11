@@ -2,10 +2,10 @@
 
 *Last updated on 24 Mar, 2019*
 
+This section covers how to tell Git to ignore certain files and directories by using _.gitignore_ files or the `git update-index` commands.
+
 !!! tip
     Basic knowledge of Git is assumed in this tutorial. If you are new to Git, visit <http://rogerdudler.github.io/git-guide/> to learn the basics first.
-
-This section covers how to tell Git to ignore certain files and directories by using _.gitignore_ files or the `git update-index` commands.
 
 If you want a certain file or directory to be ignored for the long-term, you should choose to do so using _.gitignore_ files. Otherwise, if you only want Git to ignore a certain file temporarily, before committing it at a later time, you should do so using the `git update-index` commands.
 

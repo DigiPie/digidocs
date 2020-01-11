@@ -1,4 +1,7 @@
-# C / Arguments
+# Arguments
+
+*Last updated on 10 Mar, 2019*
+
 In this section you will find my notes on command line arguments which are passed into the `main()` function.
 
 ## Print out arguments
@@ -27,6 +30,6 @@ To use:
 - Compile the code with `gcc print-arguments.c -o print-arguments`.
 - Run the executable with `./print-arguments test`.
 
-Stuff to experiment with:
+## Stuff to try
 
 - Run the executable with `./print-arguments $USER` to pass in the environment variable `USER`.

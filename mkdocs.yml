@@ -42,6 +42,8 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - C:
+    - Arguments: c/arguments.md
   - Git:
       - Ignoring files: git/ignoring-files.md
   - Heroku:

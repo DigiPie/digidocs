@@ -6,12 +6,15 @@
 
 DigiDocs is a collection of concise, to-the-point tutorials and references for my personal use. It started out being a way for [me](http://www.evantay.com) to document what I learn in a concise manner. I did so because I wanted to minimise time spent re-learning things I have forgotten.
 
+!!! info
+    My latest page: [Heroku/Quick-Deploy](heroku/quick-deploy.md)
 ## Chapters
 
 Check out my notes here:
 
 | Title                        | Dated               | Remarks          |
 | ---------------------------- | ------------------- | ---------------- |
+| [C](c/arguments.md) | Mar 2019 to Present | Work-in-progress |
 | [Git](git/ignoring-files.md) | Mar 2019 to Present | Work-in-progress |
 | [Heroku](heroku/quick-deploy.md)    | Jan 2020 to Present | Work-in-progress |
 
