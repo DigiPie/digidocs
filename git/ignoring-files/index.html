@@ -206,6 +206,19 @@
   
     <li class="md-tabs__item">
       
+        <a href="../../c/arguments/" class="md-tabs__link">
+          C
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
         <a href="./" class="md-tabs__link md-tabs__link--active">
           Git
         </a>
@@ -219,8 +232,8 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../probability-statistics/intro-probability/" class="md-tabs__link">
-          Probability and statistics
+        <a href="../../heroku/quick-deploy/" class="md-tabs__link">
+          Heroku
         </a>
       
     </li>
@@ -286,18 +299,54 @@
       
       
 
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      C
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        C
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../c/arguments/" title="Arguments" class="md-nav__link">
+      Arguments
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
   
 
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
-    <label class="md-nav__link" for="nav-2">
+    <label class="md-nav__link" for="nav-3">
       Git
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
+      <label class="md-nav__title" for="nav-3">
         Git
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -334,13 +383,6 @@
   
     <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#mar-24-2019" class="md-nav__link">
-    Mar 24, 2019
-  </a>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#using-gitignore-files" class="md-nav__link">
@@ -392,14 +434,14 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
-    <label class="md-nav__link" for="nav-3">
-      Probability and statistics
+    <label class="md-nav__link" for="nav-4">
+      Heroku
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
-        Probability and statistics
+      <label class="md-nav__title" for="nav-4">
+        Heroku
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -410,8 +452,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../probability-statistics/intro-probability/" title="Introduction to Probability" class="md-nav__link">
-      Introduction to Probability
+    <a href="../../heroku/quick-deploy/" title="Quick-deploy" class="md-nav__link">
+      Quick-deploy
     </a>
   </li>
 
@@ -440,13 +482,6 @@
   
     <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#mar-24-2019" class="md-nav__link">
-    Mar 24, 2019
-  </a>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#using-gitignore-files" class="md-nav__link">
@@ -495,12 +530,12 @@
                 
                 
                 <h1 id="ignoring-files">Ignoring files<a class="headerlink" href="#ignoring-files" title="Permanent link">&para;</a></h1>
-<h3 id="mar-24-2019">Mar 24, 2019<a class="headerlink" href="#mar-24-2019" title="Permanent link">&para;</a></h3>
+<p><em>Last updated on 24 Mar, 2019</em></p>
+<p>This section covers how to tell Git to ignore certain files and directories by using <em>.gitignore</em> files or the <code>git update-index</code> commands.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-</div>
 <p>Basic knowledge of Git is assumed in this tutorial. If you are new to Git, visit <a href="http://rogerdudler.github.io/git-guide/">http://rogerdudler.github.io/git-guide/</a> to learn the basics first.</p>
-<p>This section covers how to tell Git to ignore certain files and directories by using <em>.gitignore</em> files or the <code>git update-index</code> commands.</p>
+</div>
 <p>If you want a certain file or directory to be ignored for the long-term, you should choose to do so using <em>.gitignore</em> files. Otherwise, if you only want Git to ignore a certain file temporarily, before committing it at a later time, you should do so using the <code>git update-index</code> commands.</p>
 <h2 id="using-gitignore-files">Using .gitignore files<a class="headerlink" href="#using-gitignore-files" title="Permanent link">&para;</a></h2>
 <p>Git uses <em>.gitignore</em> files to decide which files and directories to ignore before you commit. Files and directories specified in <em>.gitignore</em> will not be tracked nor staged when <code>git add *</code> or <code>git commit -a</code> commands are used.</p>
@@ -537,8 +572,8 @@ site/
 
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-</div>
 <p>If a file is already being tracked, adding it to <em>.gitignore</em> will not stop Git from tracking it. You will need to remove the file from the Git cache using the <code>git rm --cached &lt;file&gt;</code> command. After doing this, the file will no longer be tracked provided it is specified in <em>.gitignore</em>.</p>
+</div>
 <h2 id="using-git-update-index">Using <code>git update-index</code><a class="headerlink" href="#using-git-update-index" title="Permanent link">&para;</a></h2>
 <p>If you want Git to temporarily ignore a file which you will commit at a later time, you can do so easily by using the <code>git update-index</code> commands to tell Git to stop and start tracking the file.</p>
 <p>To temporarily ignore (stop tracking) a file:</p>
@@ -553,8 +588,8 @@ site/
 
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-</div>
 <p>Read the <a href="https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-update-index.html">man page</a> to find out more about <code>git update-index</code> rules.</p>
+</div>
 <h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h2>
 <ul>
 <li>gitscm's documentation for <em>.gitignore</em>:<br />
@@ -633,8 +668,8 @@ site/
 
         <!-- Link to previous page -->
         
-          <a href=""
-              title="Home"
+          <a href="c/arguments/"
+              title="Arguments"
               class="md-flex md-footer-nav__link md-footer-nav__link--prev"
               rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -647,7 +682,7 @@ site/
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Home
+                Arguments
               </span>
             </div>
           </a>
@@ -655,7 +690,7 @@ site/
 
         <!-- Link to next page -->
         
-          <a href="probability-statistics/intro-probability/" title="Introduction to Probability"
+          <a href="heroku/quick-deploy/" title="Quick-deploy"
               class="md-flex md-footer-nav__link md-footer-nav__link--next"
               rel="next">
             <div class="md-flex__cell md-flex__cell--stretch
@@ -664,7 +699,7 @@ site/
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Introduction to Probability
+                Quick-deploy
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
