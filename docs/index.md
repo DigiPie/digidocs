@@ -4,7 +4,7 @@
 
 ## What is this
 
-DigiDocs is a collection of concise, to-the-point tutorials and references for my personal use. It started out being a way for [me](http://www.evantay.com) to document what I learn in a concise manner. I did so because I wanted to minimise time spent re-learning things I have forgotten.
+[DigiDocs](https://digipie.github.io/digidocs/) is a collection of concise, to-the-point tutorials and references for my personal use. It is a way for me to document what I learn in a concise manner. I do so because I want to minimise time spent re-learning things.
 
 !!! info
     My latest page: [Heroku/Quick-Deploy](heroku/quick-deploy.md)

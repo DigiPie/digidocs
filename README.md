@@ -1,5 +1,8 @@
-# What is this
-[DigiDocs](https://digipie.github.io/digidocs/) is a collection of concise, to-the-point tutorials for technologies such as Git, Linux and C. These tutorials are organised under chapters such as Git, Linux and C which can be accessed below. This website is currently a work-in-progress and has little to no content. Check it again at a later date.
+# What is DigiDocs
+[DigiDocs](https://digipie.github.io/digidocs/) is a collection of concise, to-the-point tutorials and references for my personal use. It is a way for me to document what I learn in a concise manner. I do so because I want to minimise time spent re-learning things.
+
+# What is Skillsfuture
+[SkillsFuture](https://github.com/DigiPie/skillsfuture) is where I do my learning. You will find code and raw notes from my self-learning journey there, and more refined tutorials and references here at DigiDocs.
 
 # How was this built
 DigiDocs is built using [MkDocs](https://github.com/mkdocs/mkdocs/), a static site generator for project documentation, and the [Material for MkDocs](https://github.com/squidfunk/mkdocs-material) theme.
