@@ -13,7 +13,7 @@
         <meta name="description" content="DigiDocs is a collection of concise, to-the-point tutorials for technologies such as Git, Linux and C. These tutorials are organised under chapters such as Git, Linux and C.">
       
       
-        <link rel="canonical" href="https://digipie.github.io/digidocs/R/vectors/">
+        <link rel="canonical" href="https://digipie.github.io/digidocs/nodejs/auto-reload/">
       
       
         <meta name="author" content="Evan Tay">
@@ -42,7 +42,7 @@
     
     
       
-        <title>R / Vectors and subsetting - DigiDocs</title>
+        <title>Auto-reload - DigiDocs</title>
       
     
     
@@ -91,7 +91,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#r-vectors-and-subsetting" tabindex="1" class="md-skip">
+      <a href="#auto-reload" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -117,7 +117,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                R / Vectors and subsetting
+                Auto-reload
               
             </span>
           
@@ -185,14 +185,16 @@
       
         
 
-<nav class="md-tabs" data-md-component="tabs">
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
   <li class="md-tabs__item">
     
-      <a href="../.." class="md-tabs__link md-tabs__link--active">
+      <a href="../.." class="md-tabs__link">
         Home
       </a>
     
@@ -243,7 +245,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../../nodejs/auto-reload/" class="md-tabs__link">
+        <a href="./" class="md-tabs__link md-tabs__link--active">
           NodeJS
         </a>
       
@@ -418,10 +420,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
     
     <label class="md-nav__link" for="nav-5">
       NodeJS
@@ -437,11 +441,82 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../nodejs/auto-reload/" title="Auto-reload" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Auto-reload
+      </label>
+    
+    <a href="./" title="Auto-reload" class="md-nav__link md-nav__link--active">
       Auto-reload
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#nodemon" class="md-nav__link">
+    Nodemon
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-use" class="md-nav__link">
+    How-to-use
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-to-npm-scripts" class="md-nav__link">
+    Add to npm scripts
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    Resources
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+        <li class="md-nav__item">
+          <a href="#__comments" class="md-nav__link md-nav__link--active">
+            Comments
+          </a>
+        </li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -471,30 +546,23 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creating-vectors" class="md-nav__link">
-    Creating vectors
+  <a href="#nodemon" class="md-nav__link">
+    Nodemon
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#c" class="md-nav__link">
-    c
+  <a href="#how-to-use" class="md-nav__link">
+    How-to-use
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#seq" class="md-nav__link">
-    seq
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#naming-vectors" class="md-nav__link">
-    Naming vectors
+  <a href="#add-to-npm-scripts" class="md-nav__link">
+    Add to npm scripts
   </a>
   
 </li>
@@ -505,36 +573,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#subsetting" class="md-nav__link">
-    Subsetting
+  <a href="#resources" class="md-nav__link">
+    Resources
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#single-entry" class="md-nav__link">
-    Single entry
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#multiple-specific-entries" class="md-nav__link">
-    Multiple specific entries
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#multiple-consecutive-entries" class="md-nav__link">
-    Multiple consecutive entries
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -560,94 +601,53 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/DigiPie/digidocs/edit/master/docs/R/vectors.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/DigiPie/digidocs/edit/master/docs/nodejs/auto-reload.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="r-vectors-and-subsetting">R / Vectors and subsetting<a class="headerlink" href="#r-vectors-and-subsetting" title="Permanent link">&para;</a></h1>
-<p>This section covers vector manipulation and specific access of entries in a vector via subsetting.</p>
-<h2 id="creating-vectors">Creating vectors<a class="headerlink" href="#creating-vectors" title="Permanent link">&para;</a></h2>
-<h3 id="c"><code>c</code><a class="headerlink" href="#c" title="Permanent link">&para;</a></h3>
-<p>Use the function <em>c</em> which stands for concatenation.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&gt;</span> <span class="n">codes</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="m">65</span><span class="p">,</span> <span class="m">60</span><span class="p">,</span> <span class="m">62</span><span class="p">)</span>
-<span class="o">&gt;</span> <span class="n">countries</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;Singapore&quot;</span><span class="p">,</span><span class="s">&quot;Malaysia&quot;</span><span class="p">,</span><span class="s">&quot;Indonesia&quot;</span><span class="p">)</span>
-<span class="o">&gt;</span> <span class="n">countryCodes</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="n">Singapore</span><span class="o">=</span><span class="m">65</span><span class="p">,</span><span class="n">Malaysia</span><span class="o">=</span><span class="m">60</span><span class="p">,</span><span class="n">Indonesia</span><span class="o">=</span><span class="m">62</span><span class="p">)</span> <span class="c1"># Still numeric</span>
-<span class="o">&gt;</span> <span class="n">countryCodes</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="s">&quot;Singapore&quot;</span><span class="o">=</span><span class="m">65</span><span class="p">,</span><span class="s">&quot;Malaysia&quot;</span><span class="o">=</span><span class="m">60</span><span class="p">,</span><span class="s">&quot;Indonesia&quot;</span><span class="o">=</span><span class="m">62</span><span class="p">)</span> <span class="c1"># Same as previous</span>
+                <h1 id="auto-reload">Auto-reload<a class="headerlink" href="#auto-reload" title="Permanent link">&para;</a></h1>
+<p><em>Last updated on 12 Jan, 2020</em></p>
+<p><strong>Problem:</strong> Manually reloading the NodeJS server by hitting <code>Ctrl + C</code> and entering <code>npm start</code> repeatedly in development is exhausting.</p>
+<p><strong>Solution:</strong> Automatically reload the server each time there is a change!</p>
+<h2 id="nodemon">Nodemon<a class="headerlink" href="#nodemon" title="Permanent link">&para;</a></h2>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
+<p>Nodemon is a utility that will monitor for any changes in your source and automatically restart your server.</p>
+</div>
+<h3 id="how-to-use">How-to-use<a class="headerlink" href="#how-to-use" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Install <code>nodemon</code>: <code>npm i -g nodemon</code>.</li>
+<li>Replace <code>node</code> with <code>nodemon</code> in your command. For example, change <code>node index.js</code> to <code>nodemon index.js</code>. That's it.</li>
+</ol>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>npm i -g nodemon
 </pre></div>
 </td></tr></table>
 
-<h3 id="seq"><code>seq</code><a class="headerlink" href="#seq" title="Permanent link">&para;</a></h3>
-<p>Use the function <em>seq</em> which stands for sequence.</p>
-<p>Simplest sequence generation</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&gt;</span> <span class="nf">seq</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">4</span><span class="p">)</span>
-<span class="n">[1]</span> <span class="m">1</span> <span class="m">2</span> <span class="m">3</span> <span class="m">4</span>
-</pre></div>
-</td></tr></table>
-
-<p>Sequence generation with increment defined using the <code>by</code> argument.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&gt;</span> <span class="nf">seq</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">6</span><span class="p">,</span> <span class="m">2</span><span class="p">)</span> <span class="c1"># Third argument is the `by` argument</span>
-<span class="n">[1]</span> <span class="m">1</span> <span class="m">3</span> <span class="m">5</span>
-</pre></div>
-</td></tr></table>
-
-<p>Shorthand operator</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&gt;</span> <span class="m">1</span><span class="o">:</span><span class="m">4</span> <span class="c1"># Shorthand for consecutive integers</span>
-<span class="n">[1]</span> <span class="m">1</span> <span class="m">2</span> <span class="m">3</span> <span class="m">4</span>
-</pre></div>
-</td></tr></table>
-
-<p>Sequence generation with length defined using the <code>length.out</code> argument.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&gt;</span> <span class="n">fourNo</span> <span class="o">&lt;-</span> <span class="nf">seq</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">3</span><span class="p">,</span> <span class="n">length.out</span> <span class="o">=</span> <span class="m">4</span><span class="p">)</span> <span class="c1"># Create 4 numbers between 1 and 3.</span>
-<span class="o">&gt;</span> <span class="n">fourNo</span>
-<span class="n">[1]</span> <span class="m">1.000000</span> <span class="m">1.666667</span> <span class="m">2.333333</span> <span class="m">3.000000</span>
-</pre></div>
-</td></tr></table>
-
-<h3 id="naming-vectors">Naming vectors<a class="headerlink" href="#naming-vectors" title="Permanent link">&para;</a></h3>
-<ul>
-<li><code>names(x) &lt;- y</code>: Assigns names to a vector x's entries using vector y's entries. For example: <code>names(codes) &lt;- countries</code> produces a vector identical to <code>countryCodes</code>.</li>
-</ul>
-<h2 id="subsetting">Subsetting<a class="headerlink" href="#subsetting" title="Permanent link">&para;</a></h2>
-<p>Access specific parts of a vector via subsetting.</p>
-<h3 id="single-entry">Single entry<a class="headerlink" href="#single-entry" title="Permanent link">&para;</a></h3>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&gt;</span> <span class="n">codes[2]</span> <span class="c1"># Access second entry</span>
-<span class="n">Malaysia</span>
-<span class="m">60</span>
-</pre></div>
-</td></tr></table>
-
-<h3 id="multiple-specific-entries">Multiple specific entries<a class="headerlink" href="#multiple-specific-entries" title="Permanent link">&para;</a></h3>
+<h3 id="add-to-npm-scripts">Add to npm scripts<a class="headerlink" href="#add-to-npm-scripts" title="Permanent link">&para;</a></h3>
+<p>You can also add it to npm scripts to make life even easier.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4
 5
-6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&gt;</span> <span class="n">codes</span><span class="nf">[c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">3</span><span class="p">)</span><span class="n">]</span> <span class="c1"># Access first and third entry</span>
-<span class="n">Singapore</span>   <span class="n">Indonesia</span>
-<span class="m">65</span>          <span class="m">62</span>
-<span class="o">&gt;</span> <span class="n">codes</span><span class="nf">[c</span><span class="p">(</span><span class="s">&quot;Indonesia&quot;</span><span class="p">,</span> <span class="s">&quot;Malaysia&quot;</span><span class="p">)</span><span class="n">]</span> <span class="c1"># Access by names</span>
-<span class="n">Indonesia</span>   <span class="n">Malaysia</span>
-<span class="m">62</span>          <span class="m">60</span>
+6
+7
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="p">{</span>
+  <span class="err">...</span>
+  <span class="nt">&quot;scripts&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;start&quot;</span><span class="p">:</span> <span class="s2">&quot;node index.js&quot;</span><span class="p">,</span>
+<span class="hll">    <span class="nt">&quot;dev&quot;</span><span class="p">:</span> <span class="s2">&quot;nodemon index.js&quot;</span>
+</span>  <span class="p">},</span>
+  <span class="err">...</span>
+<span class="p">}</span>
 </pre></div>
 </td></tr></table>
 
-<h3 id="multiple-consecutive-entries">Multiple consecutive entries<a class="headerlink" href="#multiple-consecutive-entries" title="Permanent link">&para;</a></h3>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="o">&gt;</span> <span class="n">codes[1</span><span class="o">:</span><span class="m">2</span><span class="n">]</span> <span class="c1"># Access first to second entry</span>
-<span class="n">Singapore</span>   <span class="n">Malaysia</span>
-<span class="m">65</span>          <span class="m">60</span>
-</pre></div>
-</td></tr></table>
+<p>After doing so, you can enter <code>npm run dev</code> subsequently, which will resolve to <code>nodemon index.js</code>.</p>
+<h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Nodemon's landing page:<br />
+<a href="https://nodemon.io/">https://nodemon.io/</a></li>
+</ul>
                 
                   
                 
@@ -661,9 +661,9 @@
   <div id="disqus_thread"></div>
   <script>
     var disqus_config = function () {
-      this.page.url = "https://digipie.github.io/digidocs/R/vectors/";
+      this.page.url = "https://digipie.github.io/digidocs/nodejs/auto-reload/";
       this.page.identifier =
-        "R/vectors/";
+        "nodejs/auto-reload/";
     };
     (function() {
       var d = document, s = d.createElement("script");
@@ -707,6 +707,36 @@
 <footer class="md-footer">
 
   <!-- Link to previous and/or next page -->
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+
+        <!-- Link to previous page -->
+        
+          <a href="heroku/quick-deploy/"
+              title="Quick-deploy"
+              class="md-flex md-footer-nav__link md-footer-nav__link--prev"
+              rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back
+                    md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch
+                  md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Quick-deploy
+              </span>
+            </div>
+          </a>
+        
+
+        <!-- Link to next page -->
+        
+      </nav>
+    </div>
   
 
   <!-- Further information -->
