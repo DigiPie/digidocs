@@ -25,7 +25,7 @@ To ignore a file or directory using _.gitignore_:
 
 Example _.gitignore_ file:
 
-```git
+``` bash
 # Ignore specific file
 plaintext_password.txt
 

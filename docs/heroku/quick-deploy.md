@@ -14,7 +14,7 @@ The purpose of this page is to quickly deploy code in an existing Git repository
 
 At the root of your Git repository, run the following commands:
 
-```
+``` bash
 # Create a new Heroku application.
 heroku create
 
@@ -27,7 +27,7 @@ git push heroku master
 ### Problem 1
 Heroku remote repo not added as `heroku` automatically by `heroku create` command:
 
-```
+``` bash
 # Verify that 'heroku' has not been added
 git remote -v
 
