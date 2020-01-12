@@ -12,12 +12,13 @@
     Nodemon is a utility that will monitor for any changes in your source and automatically restart your server.
 
 ### How-to-use
-1. Install `nodemon`: `npm i -g nodemon`.
-2. Replace `node` with `nodemon` in your command. For example, change `node index.js` to `nodemon index.js`. That's it.
 
 ``` bash
 npm i -g nodemon
 ```
+
+1. Install `nodemon`: `npm i -g nodemon`.
+2. Replace `node` with `nodemon` in your command. For example, change `node index.js` to `nodemon index.js`. That's it.
 
 ### Add to npm scripts
 You can also add it to npm scripts to make life even easier.
