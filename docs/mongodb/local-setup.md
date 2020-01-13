@@ -83,6 +83,17 @@ Given that we are not enabling authentication, you can use either of the above c
 !!! info
     Read <https://docs.mongodb.com/manual/tutorial/enable-authentication/> for more information.
 
+### Verify connection-string
+To verify your connection-string, simply use `mongo <mongoURI>`:
+
+```bash
+# Example, without authentication
+mongo mongodb://localhost:27017/dev
+
+# Example, with authentication
+mongo mongodb://devadmin:<password>@localhost:27017/dev
+```
+
 ## Resources
 
 - MongoDB's official guide to *Install MongoDB Community Edition*:  
