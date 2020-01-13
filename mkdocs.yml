@@ -48,5 +48,7 @@ nav:
       - Ignoring files: git/ignoring-files.md
   - Heroku:
     - Quick-deploy: heroku/quick-deploy.md
+  - MongoDB:
+    - Local-setup: mongodb/local-setup.md
   - NodeJS:
     - Auto-reload: nodejs/auto-reload.md
