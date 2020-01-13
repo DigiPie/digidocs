@@ -1,4 +1,7 @@
-# DevOps / Ubuntu 18.04
+# Ubuntu 18.04
+
+*Last updated on 10 Mar, 2019*
+
 In this section you will find my notes on setting up and securing Ubuntu 18.04. [Vim](https://www.linux.com/learn/vim-101-beginners-guide-vim) knowledge is assumed.
 
 ## Creating a new non-root Sudo user
@@ -91,6 +94,6 @@ OpenSSH                    ALLOW       Anywhere
 OpenSSH (v6)               ALLOW       Anywhere (v6)
 ```
 
-## Web Resources
+## Resources
 1. [Initial Server Setup with Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04)
 2. [How to Set Up SSH Keys on Ubuntu 18.04 ](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-1804)

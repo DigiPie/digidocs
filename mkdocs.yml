@@ -42,13 +42,17 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - C:
-    - Arguments: c/arguments.md
   - Git:
-      - Ignoring files: git/ignoring-files.md
+    - Ignoring files: git/ignoring-files.md
   - Heroku:
     - Quick-deploy: heroku/quick-deploy.md
   - MongoDB:
     - Local-setup: mongodb/local-setup.md
   - NodeJS:
     - Auto-reload: nodejs/auto-reload.md
+  - Tech-Ops:
+    - Docker: tech-ops/docker.md
+    - Ubuntu18-04: tech-ops/ubuntu18-04.md
+  - Others:
+    - C/Arguments: c/arguments.md
+    

@@ -1,4 +1,7 @@
-# DevOps / Docker
+# Docker
+
+*Last updated on 10 Mar, 2019*
+
 In this section you will find my notes on using Docker for the deployment of Git projects.
 
 ## Docker and Github

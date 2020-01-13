@@ -11,11 +11,12 @@ Check out my notes here:
 
 | Title                        | Last updated               | Latest article          |
 | ---------------------------- | ------------------- | ---------------- |
-| [C](c/arguments.md) | Mar 2019 | [Arguments](c/arguments.md) |
 | [Git](git/ignoring-files.md) | Mar 2019 | [Ignoring files](git/ignoring-files.md) |
 | [Heroku](heroku/quick-deploy.md)    | Jan 2020 | [Quick-deploy](heroku/quick-deploy.md) |
 | [MongoDB](mongodb/local-setup.md)    | Jan 2020 | [Local-setup](mongodb/local-setup.md) |
 | [NodeJS](nodejs/auto-reload.md)    | Jan 2020 | [Auto-reload](nodejs/auto-reload.md) |
+| [Tech-Ops](tech-ops/ubuntu18-04.md)    | Mar 2019 | [Ubuntu18-04](tech-ops/ubuntu18-04.md) |
+| [Others](c/arguments.md) | Mar 2019 | [C/Arguments](c/arguments.md) |
 
 ## What is this
 
