@@ -16,6 +16,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://digipie.github.io/digidocs/mongodb/cheat-sheet/</loc>
+     <lastmod>2020-01-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://digipie.github.io/digidocs/mongodb/local-setup/</loc>
      <lastmod>2020-01-14</lastmod>
      <changefreq>daily</changefreq>
