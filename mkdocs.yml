@@ -47,6 +47,7 @@ nav:
   - Heroku:
     - Quick-deploy: heroku/quick-deploy.md
   - MongoDB:
+    - Cheat-sheet: mongodb/cheat-sheet.md
     - Local-setup: mongodb/local-setup.md
   - NodeJS:
     - Auto-reload: nodejs/auto-reload.md
