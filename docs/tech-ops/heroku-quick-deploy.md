@@ -1,6 +1,6 @@
-# Quick-deploy
+# Heoroku-quick-deploy
 
-*Last updated on 12 Jan, 2020*
+*Last updated on 23 Feb, 2020*
 
 The purpose of this page is to quickly deploy code in an existing Git repository to Heroku.
 
@@ -24,7 +24,7 @@ git push heroku master
 
 ## Debug
 
-### Problem 1
+### Missing Heroku remote repo
 Heroku remote repo not added as `heroku` automatically by `heroku create` command:
 
 ``` bash
