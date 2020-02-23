@@ -2,7 +2,7 @@
 site_name: DigiDocs
 site_description: "DigiDocs is a collection of concise, to-the-point tutorials for technologies by Evan Tay."
 site_author: "Evan Tay"
-site_url: "https://digipie.github.io/digidocs/"
+site_url: "https://www.evantay.com/docs/"
 
 # Repository
 repo_name: "DigiPie/digidocs"
