@@ -44,11 +44,12 @@ nav:
   - Home: index.md
   - Git:
     - Ignoring files: git/ignoring-files.md
-  - MongoDB:
-    - Cheat-sheet: mongodb/cheat-sheet.md
-    - Local-setup: mongodb/local-setup.md
-  - NodeJS:
-    - Auto-reload: nodejs/auto-reload.md
+  - Full-Stack:
+    - MongoDB:
+      - Cheat-sheet: full-stack/mongodb/cheat-sheet.md
+      - Local-setup: full-stack/mongodb/local-setup.md
+    - NodeJS:
+      - Auto-reload: full-stack/nodejs/auto-reload.md
   - Tech-Ops:
     - Docker: tech-ops/docker.md
     - Heroku: 

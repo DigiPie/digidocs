@@ -2,9 +2,6 @@
 
 *Last updated on 23 Feb, 2020*
 
-!!! info
-    My latest page: [Tech-Ops/Heroku/Quick-deploy](tech-ops/heroku/quick-deploy.md)
-
 ## Chapters
 
 Check out my notes here:
@@ -12,9 +9,8 @@ Check out my notes here:
 | Title                        | Last updated               | Latest article          |
 | ---------------------------- | ------------------- | ---------------- |
 | [Git](git/ignoring-files.md) | Mar 2019 | [Ignoring files](git/ignoring-files.md) |
-| [MongoDB](mongodb/cheat-sheet.md)    | Jan 2020 | [Cheat-sheet](mongodb/cheat-sheet.md) |
-| [NodeJS](nodejs/auto-reload.md)    | Jan 2020 | [Auto-reload](nodejs/auto-reload.md) |
-| [Tech-Ops](tech-ops/heroku/quick-deploy.md)    | Feb 2020 | [Heroku/Quick-deploy](tech-ops/heroku/quick-deploy.md) |
+| [Full-Stack](full-stack/mongodb/cheat-sheet.md)    | Jan 2020 | [Cheat-sheet](full-stack/mongodb/cheat-sheet.md) |
+| [Tech-Ops](tech-ops/heroku/quick-deploy.md)    | Jan 2020 | [Heroku/Quick-deploy](tech-ops/heroku/quick-deploy.md) |
 | [Others](c/arguments.md) | Mar 2019 | [C/Arguments](c/arguments.md) |
 
 ## What is this
