@@ -44,8 +44,6 @@ nav:
   - Home: index.md
   - Git:
     - Ignoring files: git/ignoring-files.md
-  - Heroku:
-    - Quick-deploy: heroku/quick-deploy.md
   - MongoDB:
     - Cheat-sheet: mongodb/cheat-sheet.md
     - Local-setup: mongodb/local-setup.md
@@ -53,6 +51,8 @@ nav:
     - Auto-reload: nodejs/auto-reload.md
   - Tech-Ops:
     - Docker: tech-ops/docker.md
+    - Heroku: 
+      - Quick-deploy: tech-ops/heroku/quick-deploy.md
     - Ubuntu18-04: tech-ops/ubuntu18-04.md
   - Others:
     - C/Arguments: c/arguments.md
