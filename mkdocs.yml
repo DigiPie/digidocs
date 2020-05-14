@@ -48,6 +48,9 @@ nav:
       - Local-setup: full-stack/mongodb/local-setup.md
     - NodeJS:
       - Auto-reload: full-stack/nodejs/auto-reload.md
+  - Git:
+    - Cheat-sheet: git/cheat-sheet.md
+    - Ignoring files: git/ignoring-files.md
   - Tech-Ops:
     - Docker: tech-ops/docker.md
     - Heroku-quick-deploy: tech-ops/heroku-quick-deploy.md
@@ -55,6 +58,4 @@ nav:
   - Others:
     - C:
       - Arguments: others/c/arguments.md
-    - Git:
-      - Ignoring files: others/git/ignoring-files.md
     
