@@ -48,6 +48,7 @@ nav:
       - Local-setup: full-stack/mongodb/local-setup.md
     - NodeJS:
       - Auto-reload: full-stack/nodejs/auto-reload.md
+      - Set-npm-run-shell: full-stack/nodejs/set-npm-run-shell.md
   - Git:
     - Cheat-sheet: git/cheat-sheet.md
     - Ignoring files: git/ignoring-files.md
