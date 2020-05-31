@@ -11,7 +11,7 @@
         <meta name="description" content="DigiDocs is a collection of concise, to-the-point tutorials for technologies by Evan Tay.">
       
       
-        <link rel="canonical" href="https://www.evantay.com/docs/git/ignoring-files/">
+        <link rel="canonical" href="https://www.evantay.com/docs/mongodb/local-setup/">
       
       
         <meta name="author" content="Evan Tay">
@@ -21,7 +21,7 @@
     
     
       
-        <title>Ignoring files - DigiDocs</title>
+        <title>Local setup - DigiDocs</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ignoring-files" class="md-skip">
+        <a href="#local-setup" class="md-skip">
           Skip to content
         </a>
       
@@ -91,7 +91,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Ignoring files
+              Local setup
             
           </span>
         </div>
@@ -201,10 +201,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       Full Stack
@@ -226,10 +228,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1" checked>
     
     <label class="md-nav__link" for="nav-2-1">
       MongoDB
@@ -253,7 +257,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../mongodb/cheat-sheet/" title="Cheat sheet" class="md-nav__link">
+    <a href="../cheat-sheet/" title="Cheat sheet" class="md-nav__link">
       Cheat sheet
     </a>
   </li>
@@ -263,11 +267,101 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../mongodb/local-setup/" title="Local setup" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Local setup
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Local setup" class="md-nav__link md-nav__link--active">
       Local setup
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installation-and-config" class="md-nav__link">
+    Installation and config
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-new-collection" class="md-nav__link">
+    Create a new collection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-new-user" class="md-nav__link">
+    Create a new user
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connection-string-format" class="md-nav__link">
+    connection-string format
+  </a>
+  
+    <nav class="md-nav" aria-label="connection-string format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authentication" class="md-nav__link">
+    Authentication
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verify-connection-string" class="md-nav__link">
+    Verify connection-string
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    Resources
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -405,12 +499,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
       Git
@@ -434,7 +526,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../cheat-sheet/" title="Cheat sheet" class="md-nav__link">
+    <a href="../../git/cheat-sheet/" title="Cheat sheet" class="md-nav__link">
       Cheat sheet
     </a>
   </li>
@@ -444,67 +536,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Ignoring files
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Ignoring files" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../git/ignoring-files/" title="Ignoring files" class="md-nav__link">
       Ignoring files
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#using-gitignore-files" class="md-nav__link">
-    Using .gitignore files
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-git-update-index" class="md-nav__link">
-    Using git update-index
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    Resources
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -611,16 +647,50 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#using-gitignore-files" class="md-nav__link">
-    Using .gitignore files
+  <a href="#installation-and-config" class="md-nav__link">
+    Installation and config
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#using-git-update-index" class="md-nav__link">
-    Using git update-index
+  <a href="#create-a-new-collection" class="md-nav__link">
+    Create a new collection
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-new-user" class="md-nav__link">
+    Create a new user
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connection-string-format" class="md-nav__link">
+    connection-string format
+  </a>
+  
+    <nav class="md-nav" aria-label="connection-string format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authentication" class="md-nav__link">
+    Authentication
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verify-connection-string" class="md-nav__link">
+    Verify connection-string
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -643,7 +713,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/DigiPie/digidocs/edit/master/docs/git/ignoring-files.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/DigiPie/digidocs/edit/master/docs/mongodb/local-setup.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -651,29 +721,21 @@
                   
                 
                 
-                <h1 id="ignoring-files">Ignoring files<a class="headerlink" href="#ignoring-files" title="Permanent link">&para;</a></h1>
-<p><em>Last updated on 24 Mar, 2019</em></p>
-<p>This section covers how to tell Git to ignore certain files and directories by using <em>.gitignore</em> files or the <code>git update-index</code> commands.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Basic knowledge of Git is assumed in this tutorial. If you are new to Git, visit <a href="http://rogerdudler.github.io/git-guide/">http://rogerdudler.github.io/git-guide/</a> to learn the basics first.</p>
-</div>
-<p>If you want a certain file or directory to be ignored for the long-term, you should choose to do so using <em>.gitignore</em> files. Otherwise, if you only want Git to ignore a certain file temporarily, before committing it at a later time, you should do so using the <code>git update-index</code> commands.</p>
-<h2 id="using-gitignore-files">Using .gitignore files<a class="headerlink" href="#using-gitignore-files" title="Permanent link">&para;</a></h2>
-<p>Git uses <em>.gitignore</em> files to decide which files and directories to ignore before you commit. Files and directories specified in <em>.gitignore</em> will not be tracked nor staged when <code>git add *</code> or <code>git commit -a</code> commands are used.</p>
-<p>To ignore a file or directory using <em>.gitignore</em>:</p>
+                <h1 id="local-setup">Local setup<a class="headerlink" href="#local-setup" title="Permanent link">&para;</a></h1>
+<p><em>Last updated on 13 Jan, 2020</em></p>
+<p>The purpose of this page is to quickly set up a local copy of MongoDB <strong>on Windows</strong> for local development purposes. Authentication will not be enabled or covered in this tutorial.</p>
+<h2 id="installation-and-config">Installation and config<a class="headerlink" href="#installation-and-config" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Create a <em>.gitignore</em> file in the desired location (e.g. the project's root directory).</li>
-<li>The <em>.gitignore</em> file affects all files and sub-directories in its directory.<ul>
-<li>It recursively affects all files and directories in its sub-directories.</li>
-<li>Sub-directories with their own <em>.gitignore</em> file use their own <em>.gitignore</em> instead.</li>
-</ul>
-</li>
-<li>Open the file and enter the filename or directory to be ignored (e.g. <em>secret.txt</em>). See example below.</li>
-<li>Save the file and commit it.</li>
-<li>Commit it to share the ignore rules with other users using the same repository and also to version-control it.</li>
+<li>Install <a href="https://docs.mongodb.com/manual/administration/install-community/">MongoDB Community Edition</a>, the standard configuration is fine.</li>
+<li>Take note of where your installation's <code>bin</code> folder is at, it should be at <code>C:\Program Files\MongoDB\Server\4.2\bin</code> by default.</li>
+<li>Add it to your environment variables. See guide <a href="https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/">here</a>.</li>
+<li>Open your terminal - if you already have it opened, exit and re-open it to reload the enviroment variables.</li>
+<li>Enter <code>mongo</code> to access MongoDB.</li>
 </ol>
-<p>Example <em>.gitignore</em> file:</p>
+<h2 id="create-a-new-collection">Create a new collection<a class="headerlink" href="#create-a-new-collection" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Next, create a new collection, use the <code>use</code> command:</li>
+</ol>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -681,49 +743,145 @@
 5
 6
 7
-8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c1"># Ignore specific file</span>
-plaintext_password.txt
+8
+9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c1"># To display the database you are using</span>
+db
 
-<span class="c1"># Ignore specific file type using wildcards</span>
-*.html
+<span class="c1"># To switch databases use `use &lt;database&gt;`</span>
+<span class="c1"># To create a new database, switch to a non-existing database</span>
+use dev
 
-<span class="c1"># Ignore specific directory</span>
-site/
+<span class="c1"># Template</span>
+use &lt;database&gt;
+</code></pre></div>
+</td></tr></table>
+
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Read <a href="https://docs.mongodb.com/manual/mongo/">https://docs.mongodb.com/manual/mongo/</a> for more information.</p>
+</div>
+<h2 id="create-a-new-user">Create a new user<a class="headerlink" href="#create-a-new-user" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Next, create a user with <code>readWrite</code> and <code>dbAdmin</code> roles, using the <code>db.createUser()</code> command:</li>
+</ol>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c1"># Switch to the database you want to add the user to</span>
+use dev
+
+<span class="c1"># Create the user with `readWrite` and `dbAdmin` rights</span>
+db.createUser<span class="o">(</span>
+  <span class="o">{</span>
+    user: <span class="s2">&quot;devadmin&quot;</span>,
+    pwd: passwordPrompt<span class="o">()</span>,
+    roles: <span class="o">[</span> <span class="s2">&quot;readWrite&quot;</span>, <span class="s2">&quot;dbAdmin&quot;</span> <span class="o">]</span>
+  <span class="o">}</span>
+<span class="o">)</span>
+
+<span class="c1"># Template</span>
+db.createUser<span class="o">(</span>
+  <span class="o">{</span>
+    user: &lt;username&gt;,
+    pwd: &lt;password&gt;,
+    roles: <span class="o">[</span> <span class="s2">&quot;readWrite&quot;</span>, <span class="s2">&quot;dbAdmin&quot;</span> <span class="o">]</span>
+  <span class="o">}</span>
+<span class="o">)</span>
+</code></pre></div>
+</td></tr></table>
+
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Read <a href="https://docs.mongodb.com/manual/reference/method/db.createUser/">https://docs.mongodb.com/manual/reference/method/db.createUser/</a> for more information.</p>
+</div>
+<h2 id="connection-string-format">connection-string format<a class="headerlink" href="#connection-string-format" title="Permanent link">&para;</a></h2>
+<p>The connection-string is used to access the MongoDB instance from your applications (i.e. MongooseJS). The format of your connection-string is as follows:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>mongodb://<span class="o">[</span>username:password@<span class="o">]</span>host1<span class="o">[</span>:port1<span class="o">][</span>,...hostN<span class="o">[</span>:portN<span class="o">]][</span>/<span class="o">[</span>database<span class="o">][</span>?options<span class="o">]]</span>
+<span class="c1"># Parts in [ and ] are optional</span>
+
+<span class="c1"># Example, without authentication</span>
+mongodb://localhost:27017/dev
+
+<span class="c1"># Example, with authentication</span>
+mongodb://devadmin:&lt;password&gt;@localhost:27017/dev
+<span class="c1"># Replace the &lt;password&gt; with your actual password</span>
 </code></pre></div>
 </td></tr></table>
 
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>If a file is already being tracked, adding it to <em>.gitignore</em> will not stop Git from tracking it. You will need to remove the file from the Git cache using the <code>git rm --cached &lt;file&gt;</code> command. After doing this, the file will no longer be tracked provided it is specified in <em>.gitignore</em>.</p>
+<p>If the username or password includes the at sign @, colon :, slash /, or the percent sign % character, use percent encoding. See <a href="https://docs.mongodb.com/manual/reference/connection-string/#examples">https://docs.mongodb.com/manual/reference/connection-string/#examples</a> for more information.</p>
 </div>
-<h2 id="using-git-update-index">Using <code>git update-index</code><a class="headerlink" href="#using-git-update-index" title="Permanent link">&para;</a></h2>
-<p>If you want Git to temporarily ignore a file which you will commit at a later time, you can do so easily by using the <code>git update-index</code> commands to tell Git to stop and start tracking the file.</p>
-<p>To temporarily ignore (stop tracking) a file:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git update-index --assume-unchanged &lt;file&gt;
+<h3 id="authentication">Authentication<a class="headerlink" href="#authentication" title="Permanent link">&para;</a></h3>
+<p>Given that we are not enabling authentication, you can use either of the above connection-string URI formats.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Read <a href="https://docs.mongodb.com/manual/tutorial/enable-authentication/">https://docs.mongodb.com/manual/tutorial/enable-authentication/</a> for more information.</p>
+</div>
+<h3 id="verify-connection-string">Verify connection-string<a class="headerlink" href="#verify-connection-string" title="Permanent link">&para;</a></h3>
+<p>To verify your connection-string, simply use <code>mongo &lt;mongoURI&gt;</code>:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c1"># Example, without authentication</span>
+mongo mongodb://localhost:27017/dev
+
+<span class="c1"># Example, with authentication</span>
+mongo mongodb://devadmin:&lt;password&gt;@localhost:27017/dev
 </code></pre></div>
 </td></tr></table>
 
-<p>To start tracking a file again:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git update-index --no-assume-unchanged &lt;file&gt;
-</code></pre></div>
-</td></tr></table>
-
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Read the <a href="https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-update-index.html">man page</a> to find out more about <code>git update-index</code> rules.</p>
-</div>
 <h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h2>
 <ul>
-<li>gitscm's documentation for <em>.gitignore</em>:<br />
-<a href="https://git-scm.com/docs/gitignore">https://git-scm.com/docs/gitignore</a></li>
-<li>github's guide to ignoring files:<br />
-<a href="https://help.github.com/en/articles/ignoring-files">https://help.github.com/en/articles/ignoring-files</a></li>
-<li>gitready's guide to ignoring files:<br />
-<a href="http://gitready.com/beginner/2009/01/19/ignoring-files.html">http://gitready.com/beginner/2009/01/19/ignoring-files.html</a></li>
-<li>gitready's guide to temporarily ignoring files:<br />
-<a href="http://gitready.com/intermediate/2009/02/18/temporarily-ignoring-files.html">http://gitready.com/intermediate/2009/02/18/temporarily-ignoring-files.html</a></li>
-<li>man page on <code>git update-index</code>:<br />
-<a href="https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-update-index.html">https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-update-index.html</a></li>
+<li>
+<p>MongoDB's official guide to <em>Install MongoDB Community Edition</em>:<br />
+<a href="https://docs.mongodb.com/manual/administration/install-community/">https://docs.mongodb.com/manual/administration/install-community/</a></p>
+</li>
+<li>
+<p>Architect Ryan's guide to <em>Add to the PATH on Windows 10</em>:<br />
+<a href="https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/">https://www.architectryan.com/2018/03/17/add-to-the-path-on-windows-10/</a></p>
+</li>
+<li>
+<p>MongoDB's official guide to <em>The <code>mongo</code> Shell</em>:<br />
+<a href="https://docs.mongodb.com/manual/mongo/">https://docs.mongodb.com/manual/mongo/</a></p>
+</li>
+<li>
+<p>MongoDB's official guide to <em><code>db.createUser()</code></em>:<br />
+<a href="https://docs.mongodb.com/manual/reference/method/db.createUser/">https://docs.mongodb.com/manual/reference/method/db.createUser/</a></p>
+</li>
+<li>
+<p>MongoDB's official guide to <em>Connection String URI Format</em>: <br />
+<a href="https://docs.mongodb.com/manual/reference/connection-string/">https://docs.mongodb.com/manual/reference/connection-string/</a></p>
+</li>
+<li>
+<p>MongoDB's official guide to <em>Enable Access Control</em>: <br />
+<a href="https://docs.mongodb.com/manual/tutorial/enable-authentication/">https://docs.mongodb.com/manual/tutorial/enable-authentication/</a></p>
+</li>
 </ul>
                 
               
@@ -733,7 +891,7 @@ site/
 
   <h2 id="__comments">Comments</h2>
   <div id="disqus_thread"></div>
-  <script>var disqus_config=function(){this.page.url="https://www.evantay.com/docs/git/ignoring-files/",this.page.identifier="git/ignoring-files/"};!function(){var e=document,i=e.createElement("script");i.src="//digipie-digidocs.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)}()</script>
+  <script>var disqus_config=function(){this.page.url="https://www.evantay.com/docs/mongodb/local-setup/",this.page.identifier="mongodb/local-setup/"};!function(){var e=document,i=e.createElement("script");i.src="//digipie-digidocs.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)}()</script>
 
               
             </article>
@@ -762,13 +920,13 @@ site/
           </a>
         
         
-          <a href="../../c/arguments/" title="Arguments" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../nodejs/auto-reload/" title="Auto reload" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Arguments
+                Auto reload
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

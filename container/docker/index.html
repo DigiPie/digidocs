@@ -11,7 +11,7 @@
         <meta name="description" content="DigiDocs is a collection of concise, to-the-point tutorials for technologies by Evan Tay.">
       
       
-        <link rel="canonical" href="https://www.evantay.com/docs/git/ignoring-files/">
+        <link rel="canonical" href="https://www.evantay.com/docs/container/docker/">
       
       
         <meta name="author" content="Evan Tay">
@@ -21,7 +21,7 @@
     
     
       
-        <title>Ignoring files - DigiDocs</title>
+        <title>Docker - DigiDocs</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ignoring-files" class="md-skip">
+        <a href="#docker" class="md-skip">
           Skip to content
         </a>
       
@@ -91,7 +91,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Ignoring files
+              Docker
             
           </span>
         </div>
@@ -339,10 +339,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       Cloud
@@ -364,11 +366,73 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../container/docker/" title="Docker" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Docker
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Docker" class="md-nav__link md-nav__link--active">
       Docker
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#docker-and-github" class="md-nav__link">
+    Docker and Github
+  </a>
+  
+    <nav class="md-nav" aria-label="Docker and Github">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deploy-script" class="md-nav__link">
+    Deploy script
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    Resources
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -405,12 +469,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
       Git
@@ -434,7 +496,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../cheat-sheet/" title="Cheat sheet" class="md-nav__link">
+    <a href="../../git/cheat-sheet/" title="Cheat sheet" class="md-nav__link">
       Cheat sheet
     </a>
   </li>
@@ -444,67 +506,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Ignoring files
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Ignoring files" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../git/ignoring-files/" title="Ignoring files" class="md-nav__link">
       Ignoring files
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#using-gitignore-files" class="md-nav__link">
-    Using .gitignore files
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#using-git-update-index" class="md-nav__link">
-    Using git update-index
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    Resources
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -611,23 +617,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#using-gitignore-files" class="md-nav__link">
-    Using .gitignore files
+  <a href="#docker-and-github" class="md-nav__link">
+    Docker and Github
+  </a>
+  
+    <nav class="md-nav" aria-label="Docker and Github">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deploy-script" class="md-nav__link">
+    Deploy script
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#using-git-update-index" class="md-nav__link">
-    Using git update-index
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#resources" class="md-nav__link">
     Resources
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -643,7 +655,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/DigiPie/digidocs/edit/master/docs/git/ignoring-files.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/DigiPie/digidocs/edit/master/docs/container/docker.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -651,79 +663,45 @@
                   
                 
                 
-                <h1 id="ignoring-files">Ignoring files<a class="headerlink" href="#ignoring-files" title="Permanent link">&para;</a></h1>
-<p><em>Last updated on 24 Mar, 2019</em></p>
-<p>This section covers how to tell Git to ignore certain files and directories by using <em>.gitignore</em> files or the <code>git update-index</code> commands.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Basic knowledge of Git is assumed in this tutorial. If you are new to Git, visit <a href="http://rogerdudler.github.io/git-guide/">http://rogerdudler.github.io/git-guide/</a> to learn the basics first.</p>
-</div>
-<p>If you want a certain file or directory to be ignored for the long-term, you should choose to do so using <em>.gitignore</em> files. Otherwise, if you only want Git to ignore a certain file temporarily, before committing it at a later time, you should do so using the <code>git update-index</code> commands.</p>
-<h2 id="using-gitignore-files">Using .gitignore files<a class="headerlink" href="#using-gitignore-files" title="Permanent link">&para;</a></h2>
-<p>Git uses <em>.gitignore</em> files to decide which files and directories to ignore before you commit. Files and directories specified in <em>.gitignore</em> will not be tracked nor staged when <code>git add *</code> or <code>git commit -a</code> commands are used.</p>
-<p>To ignore a file or directory using <em>.gitignore</em>:</p>
-<ol>
-<li>Create a <em>.gitignore</em> file in the desired location (e.g. the project's root directory).</li>
-<li>The <em>.gitignore</em> file affects all files and sub-directories in its directory.<ul>
-<li>It recursively affects all files and directories in its sub-directories.</li>
-<li>Sub-directories with their own <em>.gitignore</em> file use their own <em>.gitignore</em> instead.</li>
-</ul>
-</li>
-<li>Open the file and enter the filename or directory to be ignored (e.g. <em>secret.txt</em>). See example below.</li>
-<li>Save the file and commit it.</li>
-<li>Commit it to share the ignore rules with other users using the same repository and also to version-control it.</li>
-</ol>
-<p>Example <em>.gitignore</em> file:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6
-7
-8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="c1"># Ignore specific file</span>
-plaintext_password.txt
+                <h1 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">&para;</a></h1>
+<p><em>Last updated on 10 Mar, 2019</em></p>
+<p>In this section you will find my notes on using Docker for the deployment of Git projects.</p>
+<h2 id="docker-and-github">Docker and Github<a class="headerlink" href="#docker-and-github" title="Permanent link">&para;</a></h2>
+<h3 id="deploy-script">Deploy script<a class="headerlink" href="#deploy-script" title="Permanent link">&para;</a></h3>
+<p>This script assumes that the working directory contains a <code>.git</code> directory, <code>Dockerfile</code> and <code>package.json</code>. A <code>.gitignore</code> and a <code>.dockerignore</code> file may be useful too. It is also assumed that the project dependencies have been installed using <code>npm install</code>.</p>
+<p><strong>deploy.sh</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nv">IMAGE_NAME</span><span class="o">=</span><span class="s2">&quot;&lt;IMAGE&gt;&quot;</span>
+<span class="nv">CONTAINER_NAME</span><span class="o">=</span><span class="s2">&quot;&lt;NAME&gt;&quot;</span>
+<span class="nv">CONTAINER_PORT</span><span class="o">=</span><span class="s2">&quot;&lt;PORT_1&gt;&quot;</span> <span class="c1"># To be mapped to HOST_PORT</span>
+<span class="nv">HOST_PORT</span><span class="o">=</span><span class="s2">&quot;&lt;PORT_2&gt;&quot;</span> <span class="c1"># The port clients will access</span>
 
-<span class="c1"># Ignore specific file type using wildcards</span>
-*.html
-
-<span class="c1"># Ignore specific directory</span>
-site/
+docker stop <span class="nv">$CONTAINER_NAME</span>
+docker system prune -af <span class="c1"># Removes the container and all unused images</span>
+git pull origin master <span class="c1"># Pulls latest source files and image</span>
+docker build -t <span class="nv">$IMAGE_NAME</span> .
+docker run --name <span class="nv">$CONTAINER_NAME</span> -p <span class="nv">$CONTAINER_PORT</span>:<span class="nv">$HOST_PORT</span> -d <span class="nv">$IMAGE_NAME</span>
 </code></pre></div>
 </td></tr></table>
 
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>If a file is already being tracked, adding it to <em>.gitignore</em> will not stop Git from tracking it. You will need to remove the file from the Git cache using the <code>git rm --cached &lt;file&gt;</code> command. After doing this, the file will no longer be tracked provided it is specified in <em>.gitignore</em>.</p>
-</div>
-<h2 id="using-git-update-index">Using <code>git update-index</code><a class="headerlink" href="#using-git-update-index" title="Permanent link">&para;</a></h2>
-<p>If you want Git to temporarily ignore a file which you will commit at a later time, you can do so easily by using the <code>git update-index</code> commands to tell Git to stop and start tracking the file.</p>
-<p>To temporarily ignore (stop tracking) a file:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git update-index --assume-unchanged &lt;file&gt;
-</code></pre></div>
-</td></tr></table>
-
-<p>To start tracking a file again:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>git update-index --no-assume-unchanged &lt;file&gt;
-</code></pre></div>
-</td></tr></table>
-
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Read the <a href="https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-update-index.html">man page</a> to find out more about <code>git update-index</code> rules.</p>
-</div>
-<h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h2>
+<p>Before the script can be used, replace the following placeholders:</p>
 <ul>
-<li>gitscm's documentation for <em>.gitignore</em>:<br />
-<a href="https://git-scm.com/docs/gitignore">https://git-scm.com/docs/gitignore</a></li>
-<li>github's guide to ignoring files:<br />
-<a href="https://help.github.com/en/articles/ignoring-files">https://help.github.com/en/articles/ignoring-files</a></li>
-<li>gitready's guide to ignoring files:<br />
-<a href="http://gitready.com/beginner/2009/01/19/ignoring-files.html">http://gitready.com/beginner/2009/01/19/ignoring-files.html</a></li>
-<li>gitready's guide to temporarily ignoring files:<br />
-<a href="http://gitready.com/intermediate/2009/02/18/temporarily-ignoring-files.html">http://gitready.com/intermediate/2009/02/18/temporarily-ignoring-files.html</a></li>
-<li>man page on <code>git update-index</code>:<br />
-<a href="https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-update-index.html">https://mirrors.edge.kernel.org/pub/software/scm/git/docs/git-update-index.html</a></li>
+<li><code>&lt;IMAGE&gt;</code> : The name of your image.</li>
+<li><code>&lt;NAME&gt;</code> : The desired name of your container.</li>
+<li><code>&lt;PORT_1&gt;</code> : The port of your container which your application is running on.</li>
+<li><code>&lt;PORT_2&gt;</code> : The host port your container port will be mapped to.</li>
+</ul>
+<h3 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h3>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-build-a-node-js-application-with-docker#step-4-%E2%80%94-using-a-repository-to-work-with-images">How To Build a Node.js Application with Docker</a></li>
 </ul>
                 
               
@@ -733,7 +711,7 @@ site/
 
   <h2 id="__comments">Comments</h2>
   <div id="disqus_thread"></div>
-  <script>var disqus_config=function(){this.page.url="https://www.evantay.com/docs/git/ignoring-files/",this.page.identifier="git/ignoring-files/"};!function(){var e=document,i=e.createElement("script");i.src="//digipie-digidocs.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)}()</script>
+  <script>var disqus_config=function(){this.page.url="https://www.evantay.com/docs/container/docker/",this.page.identifier="container/docker/"};!function(){var e=document,i=e.createElement("script");i.src="//digipie-digidocs.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)}()</script>
 
               
             </article>
@@ -747,7 +725,7 @@ site/
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../cheat-sheet/" title="Cheat sheet" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../nodejs/set-npm-run-shell/" title="Set npm run shell" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -756,19 +734,19 @@ site/
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Cheat sheet
+                Set npm run shell
               </div>
             </div>
           </a>
         
         
-          <a href="../../c/arguments/" title="Arguments" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../heroku/quick-deploy/" title="Heroku quick deploy" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Arguments
+                Heroku quick deploy
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
