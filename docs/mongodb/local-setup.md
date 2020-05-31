@@ -1,4 +1,4 @@
-# Local-setup
+# Local setup
 
 *Last updated on 13 Jan, 2020*
 
@@ -14,7 +14,7 @@ The purpose of this page is to quickly set up a local copy of MongoDB **on Windo
 ## Create a new collection
 6. Next, create a new collection, use the `use` command:
 
-```bash hl_lines="6"
+``` bash
 # To display the database you are using
 db
 
@@ -32,7 +32,7 @@ use <database>
 ## Create a new user
 7. Next, create a user with `readWrite` and `dbAdmin` roles, using the `db.createUser()` command:
 
-```bash hl_lines="2 5 6 7 8 9 10 11"
+``` bash
 # Switch to the database you want to add the user to
 use dev
 
@@ -61,7 +61,7 @@ db.createUser(
 ## connection-string format
 The connection-string is used to access the MongoDB instance from your applications (i.e. MongooseJS). The format of your connection-string is as follows:
 
-```bash hl_lines="5 8"
+``` bash
 mongodb://[username:password@]host1[:port1][,...hostN[:portN]][/[database][?options]]
 # Parts in [ and ] are optional
 
@@ -86,7 +86,7 @@ Given that we are not enabling authentication, you can use either of the above c
 ### Verify connection-string
 To verify your connection-string, simply use `mongo <mongoURI>`:
 
-```bash
+``` bash
 # Example, without authentication
 mongo mongodb://localhost:27017/dev
 

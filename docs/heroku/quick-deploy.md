@@ -1,4 +1,4 @@
-# Heoroku-quick-deploy
+# Heroku quick deploy
 
 *Last updated on 23 Feb, 2020*
 

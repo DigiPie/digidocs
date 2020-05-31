@@ -8,17 +8,17 @@ In this section you will find my notes on setting up and securing Ubuntu 18.04. 
 It is recommended to avoid using the root user account on a regular basis as it compromises security and is risky. Instead, create a new user account and add it to the sudo group.
 
 ###Add a new user
-```bash
+``` bash
 adduser evan
 ```
 
 ### Add user to sudo group
-```bash
+``` bash
 usermod -aG sudo evan
 ```
 
 ### Log in to user
-```bash
+``` bash
 su evan
 ```
 
@@ -29,7 +29,7 @@ Password-based authentication is susceptible to brute-force attacks. Thus, it is
 As mentioned, usage of the root user account should be avoided. Hence, it is advisable that you add your public key to the user account you created earlier on. It is assumed that you logged into your root account using SSH key.
 
 1. Create a `authorized_keys` file:
-```bash
+``` bash
 su evan
 cd ~
 mkdir .ssh
@@ -37,7 +37,7 @@ vim .ssh/authorized_keys
 ```
 
 2. Insert your public key and save the file with `:wq!`. You can copy this from the `authorized_keys` file under the root account's directory. You can find the file using the following commands:
-```bash
+``` bash
 su root
 cd ~
 vim .ssh/authorized_keys
@@ -51,7 +51,7 @@ vim .ssh/authorized_keys
 As it is assumed that you logged into your root account using SSH key, this step could be unnecessary. However, do still perform a check to verify that `PasswordAuthentication no` is in place.
 
 1. Open `sshd_config` with Vim:
-```bash
+``` bash
 sudo vim /etc/ssh/sshd_config
 ```
 
@@ -63,13 +63,13 @@ sudo vim /etc/ssh/sshd_config
 3. Save the file with `:wq!`.
 
 4. Restart `ssh` to implement this change:
-```bash
+``` bash
 sudo systemctl restart ssh
 ```
 
 ## Basic Firewall
 1. List application profiles registered with ufw firewall:
-```bash
+``` bash
 sudo ufw app list
 ```
 
@@ -80,7 +80,7 @@ Available applications:
 ```
 
 2. Ensure the firewall allows SSH connections:
-```bash
+``` bash
 sudo ufw allow OpenSSH
 sudo ufw enable # Enable firewall
 sudo ufw status # Check if OpenSSH is allowed

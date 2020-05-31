@@ -1,11 +1,11 @@
-# Cheat-sheet
+# Cheat sheet
 
 *Last updated on 19 Jan, 2020*
 
 The purpose of this page is to summarise key `mongodb` commands you will always use.
 
 ## Print a collection's documents
-```bash
+``` bash
 # Select the database
 show dbs
 use <db-name> 
@@ -21,7 +21,7 @@ db.<collection-name>.find().pretty()
 ```
 
 ## Delete documents
-```bash
+``` bash
 show dbs
 use <db-name> 
 

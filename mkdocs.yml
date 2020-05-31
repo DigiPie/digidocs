@@ -1,36 +1,35 @@
 # Project information
 site_name: DigiDocs
-site_description: "DigiDocs is a collection of concise, to-the-point tutorials for technologies by Evan Tay."
-site_author: "Evan Tay"
-site_url: "https://www.evantay.com/docs/"
+site_description: DigiDocs is a collection of concise, to-the-point tutorials for technologies by Evan Tay.
+site_author: Evan Tay
+site_url: https://www.evantay.com/docs/
 
 # Repository
-repo_name: "DigiPie/digidocs"
-repo_url: "https://github.com/DigiPie/digidocs"
+repo_name: DigiPie/digidocs
+repo_url: https://github.com/DigiPie/digidocs
 
 # Copyright
-copyright: "Copyright &copy; Evan Tay"
+copyright: Copyright &copy; Evan Tay
 
 # Configuration
 theme:
-  name: "material"
-  language: "en"
-  custom_dir: "add"
+  name: material
+  language: en
   highlightjs: true
   feature:
-    tabs: true
+    - tabs
+    - instant
   palette:
-    primary: "brown"
-    accent: "brown"
+    scheme: slate
+    primary: blue
+    accent: blue
 
 # Customization
 extra:
   social:
-    - type: "github"
-      link: "https://github.com/DigiPie"
-    - type: "globe"
-      link: "http://www.evantay.com"
-  disqus: "digipie-digidocs"
+    - icon: fontawesome/brands/github
+      link: https://github.com/DigiPie
+  disqus: digipie-digidocs
 # Extensions
 markdown_extensions:
   - admonition
@@ -42,21 +41,20 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Full-Stack:
-    - MongoDB:
-      - Cheat-sheet: full-stack/mongodb/cheat-sheet.md
-      - Local-setup: full-stack/mongodb/local-setup.md
-    - NodeJS:
-      - Auto-reload: full-stack/nodejs/auto-reload.md
-      - Set-npm-run-shell: full-stack/nodejs/set-npm-run-shell.md
+  - Full Stack:
+      - MongoDB:
+          - Cheat sheet: mongodb/cheat-sheet.md
+          - Local setup: mongodb/local-setup.md
+      - NodeJS:
+          - Auto reload: nodejs/auto-reload.md
+          - Set npm run shell: nodejs/set-npm-run-shell.md
+  - Cloud:
+      - Docker: container/docker.md
+      - Heroku quick deploy: heroku/quick-deploy.md
+      - Ubuntu 18.04: os/ubuntu18-04.md
   - Git:
-    - Cheat-sheet: git/cheat-sheet.md
-    - Ignoring files: git/ignoring-files.md
-  - Tech-Ops:
-    - Docker: tech-ops/docker.md
-    - Heroku-quick-deploy: tech-ops/heroku-quick-deploy.md
-    - Ubuntu18-04: tech-ops/ubuntu18-04.md
-  - Others:
-    - C:
-      - Arguments: others/c/arguments.md
-    
+      - Cheat sheet: git/cheat-sheet.md
+      - Ignoring files: git/ignoring-files.md
+  - Coding:
+      - C:
+          - Arguments: c/arguments.md

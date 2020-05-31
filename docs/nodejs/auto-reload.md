@@ -1,4 +1,4 @@
-# Auto-reload
+# Auto reload
 
 *Last updated on 12 Jan, 2020*
 
@@ -23,7 +23,7 @@ npm i -g nodemon
 ### Add to npm scripts
 You can also add it to npm scripts to make life even easier.
 
-``` json hl_lines="5"
+``` jso
 {
   ...
   "scripts": {

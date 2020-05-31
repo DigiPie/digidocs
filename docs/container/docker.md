@@ -10,7 +10,7 @@ In this section you will find my notes on using Docker for the deployment of Git
 This script assumes that the working directory contains a `.git` directory, `Dockerfile` and `package.json`. A `.gitignore` and a `.dockerignore` file may be useful too. It is also assumed that the project dependencies have been installed using `npm install`.
 
 **deploy.sh**
-```bash
+``` bash
 IMAGE_NAME="<IMAGE>"
 CONTAINER_NAME="<NAME>"
 CONTAINER_PORT="<PORT_1>" # To be mapped to HOST_PORT

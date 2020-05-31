@@ -1,4 +1,4 @@
-# set-npm-run-shell
+# Set npm run shell
 
 *Last updated on 17 May, 2020*
 
