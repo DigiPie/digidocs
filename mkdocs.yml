@@ -49,6 +49,8 @@ nav:
           - Auto reload: nodejs/auto-reload.md
           - Set npm run shell: nodejs/set-npm-run-shell.md
   - Cloud:
+      - Google Cloud:
+          - Kubernetes Engine: gcp/kubernetes-engine.md
       - Docker: container/docker.md
       - Heroku quick deploy: heroku/quick-deploy.md
       - Ubuntu 18.04: os/ubuntu18-04.md

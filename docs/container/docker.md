@@ -30,5 +30,5 @@ Before the script can be used, replace the following placeholders:
 * `<PORT_1>` : The port of your container which your application is running on.
 * `<PORT_2>` : The host port your container port will be mapped to.
 
-### Resources
+## Resources
 * [How To Build a Node.js Application with Docker](https://www.digitalocean.com/community/tutorials/how-to-build-a-node-js-application-with-docker#step-4-%E2%80%94-using-a-repository-to-work-with-images)
