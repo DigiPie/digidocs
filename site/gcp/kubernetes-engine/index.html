@@ -11,7 +11,7 @@
         <meta name="description" content="DigiDocs is a collection of concise, to-the-point tutorials for technologies by Evan Tay.">
       
       
-        <link rel="canonical" href="https://www.evantay.com/docs/git/cheat-sheet/">
+        <link rel="canonical" href="https://www.evantay.com/docs/gcp/kubernetes-engine/">
       
       
         <meta name="author" content="Evan Tay">
@@ -21,7 +21,7 @@
     
     
       
-        <title>Cheat sheet - DigiDocs</title>
+        <title>Kubernetes Engine - DigiDocs</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#cheat-sheet" class="md-skip">
+        <a href="#getting-started-with-google-kubernetes-engine" class="md-skip">
           Skip to content
         </a>
       
@@ -91,7 +91,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Cheat sheet
+              Kubernetes Engine
             
           </span>
         </div>
@@ -339,10 +339,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       Cloud
@@ -364,10 +366,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" checked>
     
     <label class="md-nav__link" for="nav-3-1">
       Google Cloud
@@ -389,11 +393,135 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../gcp/kubernetes-engine/" title="Kubernetes Engine" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Kubernetes Engine
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Kubernetes Engine" class="md-nav__link md-nav__link--active">
       Kubernetes Engine
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#clusters" class="md-nav__link">
+    Clusters
+  </a>
+  
+    <nav class="md-nav" aria-label="Clusters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-cluster" class="md-nav__link">
+    Creating a cluster
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deleting-a-cluster" class="md-nav__link">
+    Deleting a cluster
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getting-cluster-info" class="md-nav__link">
+    Getting cluster info
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deployments" class="md-nav__link">
+    Deployments
+  </a>
+  
+    <nav class="md-nav" aria-label="Deployments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-deployment" class="md-nav__link">
+    Creating a deployment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deleting-a-deployment" class="md-nav__link">
+    Deleting a deployment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updating-your-deployment" class="md-nav__link">
+    Updating your deployment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scaling-a-deployment" class="md-nav__link">
+    Scaling a deployment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getting-deployment-info" class="md-nav__link">
+    Getting deployment info
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    Resources
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -447,12 +575,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
       Git
@@ -474,67 +600,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Cheat sheet
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Cheat sheet" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../git/cheat-sheet/" title="Cheat sheet" class="md-nav__link">
       Cheat sheet
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#delete-local-and-remote-branches" class="md-nav__link">
-    Delete local and remote branches
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reset-a-branch" class="md-nav__link">
-    Reset a branch
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    Resources
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -544,7 +614,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../ignoring-files/" title="Ignoring files" class="md-nav__link">
+    <a href="../../git/ignoring-files/" title="Ignoring files" class="md-nav__link">
       Ignoring files
     </a>
   </li>
@@ -653,16 +723,84 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#delete-local-and-remote-branches" class="md-nav__link">
-    Delete local and remote branches
+  <a href="#clusters" class="md-nav__link">
+    Clusters
   </a>
+  
+    <nav class="md-nav" aria-label="Clusters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-cluster" class="md-nav__link">
+    Creating a cluster
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deleting-a-cluster" class="md-nav__link">
+    Deleting a cluster
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getting-cluster-info" class="md-nav__link">
+    Getting cluster info
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#reset-a-branch" class="md-nav__link">
-    Reset a branch
+  <a href="#deployments" class="md-nav__link">
+    Deployments
   </a>
+  
+    <nav class="md-nav" aria-label="Deployments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-a-deployment" class="md-nav__link">
+    Creating a deployment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deleting-a-deployment" class="md-nav__link">
+    Deleting a deployment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updating-your-deployment" class="md-nav__link">
+    Updating your deployment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scaling-a-deployment" class="md-nav__link">
+    Scaling a deployment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getting-deployment-info" class="md-nav__link">
+    Getting deployment info
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -685,7 +823,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/DigiPie/digidocs/edit/master/docs/git/cheat-sheet.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/DigiPie/digidocs/edit/master/docs/gcp/kubernetes-engine.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -693,55 +831,134 @@
                   
                 
                 
-                <h1 id="cheat-sheet">Cheat-sheet<a class="headerlink" href="#cheat-sheet" title="Permanent link">&para;</a></h1>
-<p><em>Last updated on 14 May, 2020</em></p>
-<p>This section covers various common <code>git</code> use-cases.</p>
+                <h1 id="getting-started-with-google-kubernetes-engine">Getting started with Google Kubernetes Engine<a class="headerlink" href="#getting-started-with-google-kubernetes-engine" title="Permanent link">&para;</a></h1>
+<p><em>Last updated on 1 Jun, 2020</em></p>
+<p>In this section, you will find my notes on using Kubernetes on Google Cloud Platform's <a href="https://cloud.google.com/kubernetes-engine">Kubernetes Engine</a> (GKE). It covers a typical workflow for starting a Kubernetes cluster and deploying an application on it.</p>
+<h2 id="clusters">Clusters<a class="headerlink" href="#clusters" title="Permanent link">&para;</a></h2>
+<h3 id="creating-a-cluster">Creating a cluster<a class="headerlink" href="#creating-a-cluster" title="Permanent link">&para;</a></h3>
+<p><strong>Typical command:</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>gcloud container clusters create <span class="nv">$C_NAME</span> --zone <span class="nv">$ZONE</span> --num-nodes <span class="nv">$NUM</span>
+</code></pre></div>
+</td></tr></table>
+
+<p><strong>Shorter command:</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>gcloud container clusters create <span class="nv">$C_NAME</span>
+</code></pre></div>
+</td></tr></table>
+
+<p><strong>With auto-scaling</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>gcloud container clusters create <span class="nv">$C_NAME</span> --enable-autoscaling --min-nodes <span class="nv">$MIN</span> --max-nodes <span class="nv">$MAX</span>
+</code></pre></div>
+</td></tr></table>
+
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The default value for <code>--num-node</code> is <strong>3</strong></p>
+</div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Basic knowledge of Git is assumed in this tutorial. If you are new to Git, visit <a href="http://rogerdudler.github.io/git-guide/">http://rogerdudler.github.io/git-guide/</a> to learn the basics first.</p>
+<p>You can set the default zone for Kubernetes Engine using the following:<br />
+For zonal clusters: <code>gcloud config set compute/zone $ZONE</code><br />
+For regional clusters: <code>gcloud config set compute/region $REGION</code></p>
 </div>
-<h2 id="delete-local-and-remote-branches">Delete local and remote branches<a class="headerlink" href="#delete-local-and-remote-branches" title="Permanent link">&para;</a></h2>
-<p><strong>Example scenario:</strong><br />
-I have merged my development branch <code>feat/new-feature</code> into <code>develop</code> and wish to delete the local and remote branch of <code>feat/new-feature</code> now.</p>
-<p><strong>The solution:</strong>  </p>
-<ul>
-<li>Delete the local branch: <ul>
-<li><code>git branch -d feat/new-feature</code></li>
-<li>or with <code>--force</code>: <code>git branch -D feat/new-feature</code></li>
-</ul>
-</li>
-<li>Delete the remote branch: <code>git push &lt;remote&gt; -d &lt;branch&gt;</code></li>
-</ul>
-<p><strong>The general command format it is based on:</strong>  </p>
-<ul>
-<li>Delete a local branch: <ul>
-<li><code>git branch -d|--delete &lt;branch&gt;</code></li>
-<li>or with <code>--force</code>: <code>git branch -D &lt;branch&gt;</code></li>
-</ul>
-</li>
-<li>Delete a remote branch: <code>git push &lt;remote&gt; -d|--delete &lt;branch&gt;</code></li>
-</ul>
-<h2 id="reset-a-branch">Reset a branch<a class="headerlink" href="#reset-a-branch" title="Permanent link">&para;</a></h2>
-<p><strong>Example scenario:</strong><br />
-I messed up my local <code>master</code> branch. I want to reset it such that it will revert to being the same as <code>origin/master</code>.</p>
-<p><strong>The one-line solution:</strong><br />
-<code>git checkout -B master origin/master</code></p>
-<p><strong>The general command format it is based on:</strong><br />
-<code>git checkout -b|-B &lt;new_branch&gt; [&lt;start point&gt;]</code></p>
-<p><strong>How does it work?</strong></p>
-<p><code>git checkout -b|-B &lt;new_branch&gt;</code> is typically used to create and switch to a new branch. However, if <code>&lt;new_branch&gt;</code> already exists, it will be reset instead.</p>
+<h3 id="deleting-a-cluster">Deleting a cluster<a class="headerlink" href="#deleting-a-cluster" title="Permanent link">&para;</a></h3>
+<p><strong>Typical command</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>gcloud container clusters delete <span class="nv">$C_NAME</span>
+</code></pre></div>
+</td></tr></table>
+
+<h3 id="getting-cluster-info">Getting cluster info<a class="headerlink" href="#getting-cluster-info" title="Permanent link">&para;</a></h3>
+<p><strong>Get all pods running in the cluster</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>kubectl get pods
+</code></pre></div>
+</td></tr></table>
+
+<p><strong>Get all services running in the cluster</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>kubectl get services
+</code></pre></div>
+</td></tr></table>
+
+<p><strong>Get credentials for cluster</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>gcloud container clusters get-credentials $C_NAME
+</code></pre></div>
+</td></tr></table>
+
 <div class="admonition cite">
 <p class="admonition-title">Cite</p>
-<p>If <code>-B</code> is given, <code>&lt;new_branch&gt;</code> is created if it doesn’t exist; otherwise, it is reset.</p>
+<p>This command enables switching to a specific cluster, when working with multiple clusters. It can also be used to access a previously created cluster from a new workstation.</p>
 </div>
+<h2 id="deployments">Deployments<a class="headerlink" href="#deployments" title="Permanent link">&para;</a></h2>
+<h3 id="creating-a-deployment">Creating a deployment<a class="headerlink" href="#creating-a-deployment" title="Permanent link">&para;</a></h3>
+<p>To create a deployment, you need to have your Docker image prepared beforehand. This image must be built and uploaded to the <a href="https://cloud.google.com/container-registry">Container Registry</a> before you can deploy it on your GKE cluster.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Before you proceed, you need to configure Docker to authenticate to the Container Registry:   <br />
+<code>gcloud auth configure-docker</code></p>
+</div>
+<ol>
+<li>Build your image:<br />
+<code>docker build -t gcr.io/$PROJECT_ID/$NAME:$VER .</code></li>
+<li>Verify it was built:<br />
+<code>docker images</code></li>
+<li>Upload your image to the registry:<br />
+<code>docker push gcr.io/$PROJECT_ID/$NAME:$VER</code></li>
+<li>Verify it was uploaded:<br />
+<code>docker run --rm -p $CONT_PORT:$HOST_PORT gcr.io/$PROJECT_ID/$NAME:$VER</code></li>
+<li>Create your deployment:<br />
+<code>kubectl create deployment $D_NAME --image=gcr.io/$PROJECT_ID/$NAME:$VER</code></li>
+<li>Verify it was deployed:<br />
+<code>kubectl get pods</code></li>
+<li>Expose the deployment to the Internet via a Service resource:<br />
+<code>kubectl expose deployment $D_NAME --type=LoadBalancer --port $EXPOSED_PORT --target-port $HOST_PORT</code></li>
+<li>Verify the service is running:<br />
+<code>kubectl get service</code></li>
+</ol>
+<h3 id="deleting-a-deployment">Deleting a deployment<a class="headerlink" href="#deleting-a-deployment" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Delete the Service resource:<br />
+<code>kubectl delete service $D_NAME</code></li>
+<li>Delete the cluster:<br />
+<code>gcloud container clusters delete $C_NAME</code></li>
+</ol>
+<h3 id="updating-your-deployment">Updating your deployment<a class="headerlink" href="#updating-your-deployment" title="Permanent link">&para;</a></h3>
+<p>To update your deployment with a new Docker image, you have to upload it to the Cloud Registry. Next, you can apply a rolling update of your deployment's Docker image.</p>
+<ol>
+<li>Build your new image (remember to update <code>$VER</code>):<br />
+<code>docker build -t gcr.io/$PROJECT_ID/$I_NAME:$VER .</code></li>
+<li>Verify it was built:<br />
+<code>docker images</code></li>
+<li>Upload your image to the registry:<br />
+<code>docker push gcr.io/$PROJECT_ID/$I_NAME:$VER</code></li>
+<li>Verify it was uploaded:<br />
+<code>docker run --rm -p $CONT_PORT:$HOST_PORT gcr.io/$PROJECT_ID/$I_NAME:$VER</code></li>
+<li>Apply a rolling image update:<br />
+<code>kubectl set image deployment/$D_NAME $I_NAME=gcr.io/$PROJECT_ID/$I_NAME:$VER</code></li>
+</ol>
+<h3 id="scaling-a-deployment">Scaling a deployment<a class="headerlink" href="#scaling-a-deployment" title="Permanent link">&para;</a></h3>
+<p><strong>Typical example</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>kubectl scale deployment <span class="nv">$D_NAME</span> --replicas <span class="nv">$NUM</span>
+</code></pre></div>
+</td></tr></table>
+
+<p><strong>With auto-scaling</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>kubectl autoscale deployment <span class="nv">$D_NAME</span> --max <span class="nv">$MAX</span> --min <span class="nv">$MIN</span> --cpu-percent <span class="nv">$PERCENT</span>
+</code></pre></div>
+</td></tr></table>
+
+<h3 id="getting-deployment-info">Getting deployment info<a class="headerlink" href="#getting-deployment-info" title="Permanent link">&para;</a></h3>
+<p><strong>Typical example</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>kubectl get deployment <span class="nv">$D_NAME</span>
+</code></pre></div>
+</td></tr></table>
+
 <h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h2>
 <ul>
-<li>gitscm's documentation for <em>branch</em>:<br />
-<a href="https://git-scm.com/docs/git-branch">https://git-scm.com/docs/git-branch</a></li>
-<li>gitscm's documentation for <em>checkout</em>:<br />
-<a href="https://git-scm.com/docs/git-checkout">https://git-scm.com/docs/git-checkout</a></li>
-<li>gitscm's documentation for <em>push</em>:<br />
-<a href="https://git-scm.com/docs/git-push">https://git-scm.com/docs/git-push</a></li>
+<li><a href="https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands">Kubectl Reference Docs</a></li>
+<li><a href="https://cloud.google.com/sdk/gcloud/reference/container/clusters/create">Documentation on <code>gcloud container clusters create</code></a></li>
+<li><a href="https://cloud.google.com/kubernetes-engine/docs/how-to/deleting-a-cluster">Documentation on <code>gcloud container clusters delete</code></a></li>
+<li><a href="https://cloud.google.com/sdk/gcloud/reference/container/clusters/get-credentials">Documentation on <code>gcloud container clusters get-credentials</code></a></li>
+<li><a href="https://cloud.google.com/kubernetes-engine/docs/tutorials/hello-app">Tutorial on deploying a containerized web application</a></li>
+<li><a href="https://cloud.google.com/kubernetes-engine/docs/how-to/scaling-apps#autoscaling-deployments">Documentation on <code>kubectl autoscale</code></a></li>
 </ul>
                 
               
@@ -751,7 +968,7 @@ I messed up my local <code>master</code> branch. I want to reset it such that it
 
   <h2 id="__comments">Comments</h2>
   <div id="disqus_thread"></div>
-  <script>var disqus_config=function(){this.page.url="https://www.evantay.com/docs/git/cheat-sheet/",this.page.identifier="git/cheat-sheet/"};!function(){var e=document,i=e.createElement("script");i.src="//digipie-digidocs.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)}()</script>
+  <script>var disqus_config=function(){this.page.url="https://www.evantay.com/docs/gcp/kubernetes-engine/",this.page.identifier="gcp/kubernetes-engine/"};!function(){var e=document,i=e.createElement("script");i.src="//digipie-digidocs.disqus.com/embed.js",i.setAttribute("data-timestamp",+new Date),(e.head||e.body).appendChild(i)}()</script>
 
               
             </article>
@@ -765,7 +982,7 @@ I messed up my local <code>master</code> branch. I want to reset it such that it
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../../os/ubuntu18-04/" title="Ubuntu 18.04" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../nodejs/set-npm-run-shell/" title="Set npm run shell" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -774,19 +991,19 @@ I messed up my local <code>master</code> branch. I want to reset it such that it
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Ubuntu 18.04
+                Set npm run shell
               </div>
             </div>
           </a>
         
         
-          <a href="../ignoring-files/" title="Ignoring files" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../container/docker/" title="Docker" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Ignoring files
+                Docker
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
