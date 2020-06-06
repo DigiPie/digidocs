@@ -453,8 +453,29 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#viewing-logs" class="md-nav__link">
-    Viewing logs
+  <a href="#starting-an-interactive-shell" class="md-nav__link">
+    Starting an interactive shell
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stopping-and-removing-containers" class="md-nav__link">
+    Stopping and removing containers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inspecting-container-metadata" class="md-nav__link">
+    Inspecting container metadata
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewing-container-logs" class="md-nav__link">
+    Viewing container logs
   </a>
   
 </li>
@@ -687,8 +708,29 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#viewing-logs" class="md-nav__link">
-    Viewing logs
+  <a href="#starting-an-interactive-shell" class="md-nav__link">
+    Starting an interactive shell
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stopping-and-removing-containers" class="md-nav__link">
+    Stopping and removing containers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inspecting-container-metadata" class="md-nav__link">
+    Inspecting container metadata
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viewing-container-logs" class="md-nav__link">
+    Viewing container logs
   </a>
   
 </li>
@@ -750,7 +792,33 @@
 <em>Compiled by: <a href="https://evantay.com/">Evan Tay</a></em></p>
 <p>In this section you will find my notes on using Docker for the deployment of Git projects.</p>
 <h2 id="useful-docker-commands">Useful Docker commands<a class="headerlink" href="#useful-docker-commands" title="Permanent link">&para;</a></h2>
-<h3 id="viewing-logs">Viewing logs<a class="headerlink" href="#viewing-logs" title="Permanent link">&para;</a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You do not have to write out the <code>CONTAINER_ID</code> in full. The partial <code>CONTAINER_ID</code> specified need only uniquely identify the container. Given a container 'aa151b912448' and 'aa153cd14238', <code>docker logs aa15</code> will not work, but <code>docker logs aa151</code> will.</p>
+</div>
+<h3 id="starting-an-interactive-shell">Starting an interactive shell<a class="headerlink" href="#starting-an-interactive-shell" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>docker <span class="nb">exec</span> -it <span class="o">[</span>CONTAINER_ID<span class="o">]</span> bash
+</code></pre></div>
+</td></tr></table>
+
+<h3 id="stopping-and-removing-containers">Stopping and removing containers<a class="headerlink" href="#stopping-and-removing-containers" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>docker stop <span class="k">$(</span>docker ps -q<span class="k">)</span>
+docker rm <span class="k">$(</span>docker ps -aq<span class="k">)</span>
+</code></pre></div>
+</td></tr></table>
+
+<p><code>docker ps</code> options:</p>
+<ul>
+<li><code>-q</code>: Only display numeric IDs</li>
+<li><code>-a</code>: Show all containers (default shows just running)</li>
+</ul>
+<h3 id="inspecting-container-metadata">Inspecting container metadata<a class="headerlink" href="#inspecting-container-metadata" title="Permanent link">&para;</a></h3>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>docker inspect <span class="o">[</span>CONTAINER_ID<span class="o">]</span>
+</code></pre></div>
+</td></tr></table>
+
+<h3 id="viewing-container-logs">Viewing container logs<a class="headerlink" href="#viewing-container-logs" title="Permanent link">&para;</a></h3>
 <p><strong>Typical command:</strong></p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>docker logs <span class="o">[</span>CONTAINER_ID<span class="o">]</span>
 </code></pre></div>
@@ -762,10 +830,6 @@
 </td></tr></table>
 
 <p>TIME can be a TIMESTAMP or relative (e.g. '10m' or '5s')</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-</div>
-<p>You do not have to write out the <code>CONTAINER_ID</code> in full. The partial <code>CONTAINER_ID</code> specified need only uniquely identify the container. Given a container 'aa151b912448' and 'aa153cd14238', <code>docker logs aa15</code> will not work, but <code>docker logs aa151</code> will.</p>
 <h2 id="docker-and-github">Docker and Github<a class="headerlink" href="#docker-and-github" title="Permanent link">&para;</a></h2>
 <h3 id="deploy-script">Deploy script<a class="headerlink" href="#deploy-script" title="Permanent link">&para;</a></h3>
 <p>This script assumes that the working directory contains a <code>.git</code> directory, <code>Dockerfile</code> and <code>package.json</code>. A <code>.gitignore</code> and a <code>.dockerignore</code> file may be useful too. It is also assumed that the project dependencies have been installed using <code>npm install</code>.</p>
@@ -806,6 +870,7 @@ docker run --name <span class="nv">$CONTAINER_NAME</span> -p <span class="nv">$C
 <ul>
 <li><a href="https://www.digitalocean.com/community/tutorials/how-to-build-a-node-js-application-with-docker#step-4-%E2%80%94-using-a-repository-to-work-with-images">How To Build a Node.js Application with Docker</a></li>
 <li><a href="https://docs.docker.com/engine/reference/commandline/logs/">docker logs</a></li>
+<li><a href="https://docs.docker.com/engine/reference/commandline/ps/">docker ps</a></li>
 </ul>
                 
               
