@@ -1,6 +1,7 @@
 # Cheat sheet
 
-*Last updated on 19 Jan, 2020*
+*Last updated on: 19 January, 2020*  
+*Compiled by: [Evan Tay](https://evantay.com/)*
 
 The purpose of this page is to summarise key `mongodb` commands you will always use.
 

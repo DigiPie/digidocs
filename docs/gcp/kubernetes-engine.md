@@ -1,6 +1,7 @@
 # Getting started with Google Kubernetes Engine
 
-_Last updated on 1 Jun, 2020_
+*Last updated on: 1 June, 2020*  
+*Compiled by: [Evan Tay](https://evantay.com/)*
 
 In this section, you will find my notes on using Kubernetes on Google Cloud Platform's [Kubernetes Engine](https://cloud.google.com/kubernetes-engine) (GKE). It covers a typical workflow for starting a Kubernetes cluster and deploying an application on it.
 

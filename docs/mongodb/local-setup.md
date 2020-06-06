@@ -1,6 +1,7 @@
 # Local setup
 
-*Last updated on 13 Jan, 2020*
+*Last updated on: 13 January, 2020*  
+*Compiled by: [Evan Tay](https://evantay.com/)*
 
 The purpose of this page is to quickly set up a local copy of MongoDB **on Windows** for local development purposes. Authentication will not be enabled or covered in this tutorial.
 

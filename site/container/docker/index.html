@@ -8,7 +8,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="DigiDocs is a collection of concise, to-the-point tutorials for technologies by Evan Tay.">
+        <meta name="description" content="DigiDocs is a collection of concise tutorials focused on full-stack software engineering and cloud operations.">
       
       
         <link rel="canonical" href="https://www.evantay.com/docs/container/docker/">
@@ -445,6 +445,26 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#useful-docker-commands" class="md-nav__link">
+    Useful Docker commands
+  </a>
+  
+    <nav class="md-nav" aria-label="Useful Docker commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#viewing-logs" class="md-nav__link">
+    Viewing logs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#docker-and-github" class="md-nav__link">
     Docker and Github
   </a>
@@ -659,6 +679,26 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#useful-docker-commands" class="md-nav__link">
+    Useful Docker commands
+  </a>
+  
+    <nav class="md-nav" aria-label="Useful Docker commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#viewing-logs" class="md-nav__link">
+    Viewing logs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#docker-and-github" class="md-nav__link">
     Docker and Github
   </a>
@@ -706,8 +746,26 @@
                 
                 
                 <h1 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">&para;</a></h1>
-<p><em>Last updated on 10 Mar, 2019</em></p>
+<p><em>Last updated on: 6 June, 2020</em><br />
+<em>Compiled by: <a href="https://evantay.com/">Evan Tay</a></em></p>
 <p>In this section you will find my notes on using Docker for the deployment of Git projects.</p>
+<h2 id="useful-docker-commands">Useful Docker commands<a class="headerlink" href="#useful-docker-commands" title="Permanent link">&para;</a></h2>
+<h3 id="viewing-logs">Viewing logs<a class="headerlink" href="#viewing-logs" title="Permanent link">&para;</a></h3>
+<p><strong>Typical command:</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>docker logs <span class="o">[</span>CONTAINER_ID<span class="o">]</span>
+</code></pre></div>
+</td></tr></table>
+
+<p><strong>Follow log output for a specified duration:</strong></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>docker logs -f --until<span class="o">=[</span>TIME<span class="o">]</span>
+</code></pre></div>
+</td></tr></table>
+
+<p>TIME can be a TIMESTAMP or relative (e.g. '10m' or '5s')</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+</div>
+<p>You do not have to write out the <code>CONTAINER_ID</code> in full. The partial <code>CONTAINER_ID</code> specified need only uniquely identify the container. Given a container 'aa151b912448' and 'aa153cd14238', <code>docker logs aa15</code> will not work, but <code>docker logs aa151</code> will.</p>
 <h2 id="docker-and-github">Docker and Github<a class="headerlink" href="#docker-and-github" title="Permanent link">&para;</a></h2>
 <h3 id="deploy-script">Deploy script<a class="headerlink" href="#deploy-script" title="Permanent link">&para;</a></h3>
 <p>This script assumes that the working directory contains a <code>.git</code> directory, <code>Dockerfile</code> and <code>package.json</code>. A <code>.gitignore</code> and a <code>.dockerignore</code> file may be useful too. It is also assumed that the project dependencies have been installed using <code>npm install</code>.</p>
@@ -721,29 +779,33 @@
  7
  8
  9
-10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nv">IMAGE_NAME</span><span class="o">=</span><span class="s2">&quot;&lt;IMAGE&gt;&quot;</span>
-<span class="nv">CONTAINER_NAME</span><span class="o">=</span><span class="s2">&quot;&lt;NAME&gt;&quot;</span>
-<span class="nv">CONTAINER_PORT</span><span class="o">=</span><span class="s2">&quot;&lt;PORT_1&gt;&quot;</span> <span class="c1"># To be mapped to HOST_PORT</span>
-<span class="nv">HOST_PORT</span><span class="o">=</span><span class="s2">&quot;&lt;PORT_2&gt;&quot;</span> <span class="c1"># The port clients will access</span>
+10
+11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nv">IMAGE_NAME</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+<span class="nv">VERSION</span><span class="o">=</span><span class="s2">&quot;&quot;</span> <span class="c1"># Can be left blank</span>
+<span class="nv">CONTAINER_NAME</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+<span class="nv">CONTAINER_PORT</span><span class="o">=</span><span class="s2">&quot;&quot;</span> <span class="c1"># To be mapped to HOST_PORT</span>
+<span class="nv">HOST_PORT</span><span class="o">=</span><span class="s2">&quot;&quot;</span> <span class="c1"># The port clients will access</span>
 
-docker stop <span class="nv">$CONTAINER_NAME</span>
+docker stop <span class="nv">$CONTAINER_NAME</span> <span class="c1"># Stop the running container</span>
 docker system prune -af <span class="c1"># Removes the container and all unused images</span>
 git pull origin master <span class="c1"># Pulls latest source files and image</span>
 docker build -t <span class="nv">$IMAGE_NAME</span> .
-docker run --name <span class="nv">$CONTAINER_NAME</span> -p <span class="nv">$CONTAINER_PORT</span>:<span class="nv">$HOST_PORT</span> -d <span class="nv">$IMAGE_NAME</span>
+docker run --name <span class="nv">$CONTAINER_NAME</span> -p <span class="nv">$CONTAINER_PORT</span>:<span class="nv">$HOST_PORT</span> -d <span class="nv">$IMAGE_NAME</span>:<span class="nv">$VERSION</span>
 </code></pre></div>
 </td></tr></table>
 
 <p>Before the script can be used, replace the following placeholders:</p>
 <ul>
-<li><code>&lt;IMAGE&gt;</code> : The name of your image.</li>
-<li><code>&lt;NAME&gt;</code> : The desired name of your container.</li>
-<li><code>&lt;PORT_1&gt;</code> : The port of your container which your application is running on.</li>
-<li><code>&lt;PORT_2&gt;</code> : The host port your container port will be mapped to.</li>
+<li><code>IMAGE_NAME</code> : The name of your image.</li>
+<li><code>VERSION</code> : The version of your image. Can be left blank.</li>
+<li><code>CONTAINER_NAME</code> : The desired name of your container.</li>
+<li><code>CONTAINER_PORT</code> : The port of your container which your application is running on.</li>
+<li><code>HOST_PORT</code> : The host port your container port will be mapped to. This is the port that is exposed on the host system.</li>
 </ul>
 <h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://www.digitalocean.com/community/tutorials/how-to-build-a-node-js-application-with-docker#step-4-%E2%80%94-using-a-repository-to-work-with-images">How To Build a Node.js Application with Docker</a></li>
+<li><a href="https://docs.docker.com/engine/reference/commandline/logs/">docker logs</a></li>
 </ul>
                 
               

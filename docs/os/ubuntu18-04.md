@@ -1,6 +1,7 @@
 # Ubuntu 18.04
 
-*Last updated on 10 Mar, 2019*
+*Last updated on: 10 March, 2019*  
+*Compiled by: [Evan Tay](https://evantay.com/)*
 
 In this section you will find my notes on setting up and securing Ubuntu 18.04. [Vim](https://www.linux.com/learn/vim-101-beginners-guide-vim) knowledge is assumed.
 

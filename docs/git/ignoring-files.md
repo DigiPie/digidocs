@@ -1,6 +1,7 @@
 # Ignoring files
 
-*Last updated on 24 Mar, 2019*
+*Last updated on: 24 March, 2019*  
+*Compiled by: [Evan Tay](https://evantay.com/)*
 
 This section covers how to tell Git to ignore certain files and directories by using _.gitignore_ files or the `git update-index` commands.
 

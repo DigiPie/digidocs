@@ -1,6 +1,7 @@
 # Set npm run shell
 
-*Last updated on 17 May, 2020*
+*Last updated on: 17 May, 2020*  
+*Compiled by: [Evan Tay](https://evantay.com/)*
 
 This article covers how you can set the shell used when you run the `npm run` scripts.
 

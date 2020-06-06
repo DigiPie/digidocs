@@ -1,6 +1,7 @@
 # Cheat-sheet
 
-*Last updated on 14 May, 2020*
+*Last updated on: 14 May, 2020*  
+*Compiled by: [Evan Tay](https://evantay.com/)*
 
 This section covers various common `git` use-cases.
 

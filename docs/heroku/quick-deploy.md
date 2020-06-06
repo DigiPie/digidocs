@@ -1,6 +1,7 @@
 # Heroku quick deploy
 
-*Last updated on 23 Feb, 2020*
+*Last updated on: 23 February, 2020*  
+*Compiled by: [Evan Tay](https://evantay.com/)*
 
 The purpose of this page is to quickly deploy code in an existing Git repository to Heroku.
 

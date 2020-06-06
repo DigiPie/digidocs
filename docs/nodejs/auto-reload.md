@@ -1,6 +1,7 @@
 # Auto reload
 
-*Last updated on 12 Jan, 2020*
+*Last updated on: 12 January, 2020*  
+*Compiled by: [Evan Tay](https://evantay.com/)*
 
 **Problem:** Manually reloading the NodeJS server by hitting `Ctrl + C` and entering `npm start` repeatedly in development is exhausting.
 

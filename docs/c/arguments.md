@@ -1,6 +1,7 @@
 # Arguments
 
-*Last updated on 10 Mar, 2019*
+*Last updated on: 10 March, 2019*  
+*Compiled by: [Evan Tay](https://evantay.com/)*
 
 In this section you will find my notes on command line arguments which are passed into the `main()` function.
 
