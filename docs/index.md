@@ -16,7 +16,7 @@ Check out my notes here:
 
 ## Recommendation list
 
-You can also view my recommended tech-related reading, video and other multimedia list [here](list.md).
+You can view my recommendation list for tech-related papers, videos and more [here](list.md).
 
 ## What is this
 
