@@ -1,6 +1,6 @@
 # DigiDocs
 
-*Last updated on: 1 June, 2020*  
+*Last updated on: 20 June, 2020*  
 *Compiled by: [Evan Tay](https://evantay.com/)*
 
 ## Chapters
@@ -10,9 +10,13 @@ Check out my notes here:
 | Title | Last updated | Latest article | Remarks |
 | :-- | :-- | :-- | :-- |
 | Full Stack | May 2020 | [NodeJS: Set npm run shell](nodejs/set-npm-run-shell.md) | MongoDB and NodeJS |
-| Cloud | Jun 2020 | [Docker](container/docker.md) | Docker, Google Cloud, Ubuntu |
-| Git | May 2020 | [Cheat sheet](git/cheat-sheet.md) | - |
-| Coding | Mar 2019 | [C: Arguments](c/arguments.md) | C arguments |
+| Cloud | June 2020 | [Docker](container/docker.md) | Docker, Google Cloud, Ubuntu |
+| Git | June 2020 | [Cheat sheet](git/cheat-sheet.md) | - |
+| Coding | March 2019 | [C: Arguments](c/arguments.md) | C arguments |
+
+## Recommendation list
+
+You can also view my recommended tech-related reading, video and other multimedia list [here](list.md).
 
 ## What is this
 

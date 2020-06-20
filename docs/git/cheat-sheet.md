@@ -1,12 +1,32 @@
 # Cheat-sheet
 
-*Last updated on: 14 May, 2020*  
+*Last updated on: 20 June, 2020*  
 *Compiled by: [Evan Tay](https://evantay.com/)*
 
 This section covers various common `git` use-cases.
 
 !!! tip
     Basic knowledge of Git is assumed in this tutorial. If you are new to Git, visit <http://rogerdudler.github.io/git-guide/> to learn the basics first.
+
+## Get branch information
+
+I want to find out what branches I have locally:
+
+``` bash
+git branch
+```
+
+I want to find out what is the upstream branch for a given branch:
+
+``` bash
+git branch -v
+```
+
+Even more verbose information:
+
+``` bash
+git branch -vv
+```
 
 ## Delete local and remote branches
 **Example scenario:**  

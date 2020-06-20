@@ -60,3 +60,4 @@ nav:
   - Coding:
       - C:
           - Arguments: c/arguments.md
+  - Recommendation list: list.md

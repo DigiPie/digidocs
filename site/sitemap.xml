@@ -1,51 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://www.evantay.com/docs/</loc>
-     <lastmod>2020-06-06</lastmod>
+     <lastmod>2020-06-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.evantay.com/docs/mongodb/cheat-sheet/</loc>
-     <lastmod>2020-06-06</lastmod>
+     <lastmod>2020-06-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.evantay.com/docs/mongodb/local-setup/</loc>
-     <lastmod>2020-06-06</lastmod>
+     <lastmod>2020-06-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.evantay.com/docs/nodejs/auto-reload/</loc>
-     <lastmod>2020-06-06</lastmod>
+     <lastmod>2020-06-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.evantay.com/docs/nodejs/set-npm-run-shell/</loc>
-     <lastmod>2020-06-06</lastmod>
+     <lastmod>2020-06-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.evantay.com/docs/gcp/kubernetes-engine/</loc>
-     <lastmod>2020-06-06</lastmod>
+     <lastmod>2020-06-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.evantay.com/docs/container/docker/</loc>
-     <lastmod>2020-06-06</lastmod>
+     <lastmod>2020-06-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.evantay.com/docs/heroku/quick-deploy/</loc>
-     <lastmod>2020-06-06</lastmod>
+     <lastmod>2020-06-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.evantay.com/docs/os/ubuntu18-04/</loc>
-     <lastmod>2020-06-06</lastmod>
+     <lastmod>2020-06-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.evantay.com/docs/git/cheat-sheet/</loc>
-     <lastmod>2020-06-06</lastmod>
+     <lastmod>2020-06-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.evantay.com/docs/git/ignoring-files/</loc>
-     <lastmod>2020-06-06</lastmod>
+     <lastmod>2020-06-20</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://www.evantay.com/docs/c/arguments/</loc>
-     <lastmod>2020-06-06</lastmod>
+     <lastmod>2020-06-20</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://www.evantay.com/docs/list/</loc>
+     <lastmod>2020-06-20</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
