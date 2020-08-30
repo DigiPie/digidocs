@@ -10,7 +10,7 @@ Check out my notes here:
 | Title | Last updated | Latest article | Remarks |
 | :-- | :-- | :-- | :-- |
 | Full Stack | May 2020 | [NodeJS: Set npm run shell](nodejs/set-npm-run-shell.md) | MongoDB and NodeJS |
-| Cloud | June 2020 | [Docker](container/docker.md) | Docker, Google Cloud, Ubuntu |
+| Cloud | August 2020 | [Google Kubernetes Engine](gcp/kubernetes-engine.md) | Docker, Google Cloud, Ubuntu |
 | Git | June 2020 | [Cheat sheet](git/cheat-sheet.md) | - |
 | Coding | March 2019 | [C: Arguments](c/arguments.md) | C arguments |
 
