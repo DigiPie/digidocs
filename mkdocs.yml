@@ -41,13 +41,16 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Full Stack:
+  - Web Dev:
       - MongoDB:
           - Cheat sheet: mongodb/cheat-sheet.md
           - Local setup: mongodb/local-setup.md
       - NodeJS:
           - Auto reload: nodejs/auto-reload.md
           - Set npm run shell: nodejs/set-npm-run-shell.md
+  - Network:
+      - Mininet: 
+          - Getting started: mininet/getting-started.md
   - Cloud:
       - Google Cloud:
           - Kubernetes Engine: gcp/kubernetes-engine.md
